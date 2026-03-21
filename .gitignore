@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment / secrets
+.env
+*.key
+*api_key*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Large model outputs (tracked via git-lfs or separate storage)
+# data/results/*.json files ARE tracked (benchmark outputs are the product)
