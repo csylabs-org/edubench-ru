@@ -57,22 +57,53 @@ python code/run_benchmark.py --batch=frontier
 # Results saved to data/results/
 ```
 
-## Models Tested
+## Leaderboard (March 2026)
 
-See [results/](data/results/) for full outputs. Initial evaluation covers 24+ models including:
+**28 models** tested. Scores: GPT-5.4 judge, 1-4 scale (average of 5 dimensions).
 
-**Closed-source:** Claude Opus 4.6, GPT-5.4, Gemini 3.1 Pro, Grok 4.1, Kimi K2.5, GLM 5
+**EduRU** = Modules A+B+C (35 education prompts). **ChuvashBench** = Module D (15 prompts, reported separately).
 
-**Open-source:** Qwen3-32B, Qwen3-235B, DeepSeek V3.2, Llama 4 Maverick, Mistral Large 3, GigaChat-20B
+| # | Model | EduRU | Type |
+|:--:|-------|:---:|------|
+| 1 | Gemini 3.1 Pro | 3.24 | Cloud |
+| 2 | Gemini 3.1 Flash Lite | 3.12 | Cloud |
+| 3 | Kimi K2.5 | 3.09 | Cloud |
+| 4 | Claude Sonnet 4.6 | 2.99 | Cloud |
+| 5 | Mistral Large 3 | 2.99 | Open |
+| 6 | Claude Opus 4.6 | 2.98 | Cloud |
+| 7 | GPT-5.4 Mini | 2.98 | Cloud |
+| 8 | GLM 5 | 2.95 | Cloud |
+| 9 | GPT-5.4 | 2.91 | Cloud |
+| 10 | Gemini 2.5 Pro | 2.89 | Cloud |
+| 11 | EduLLM-RU (ours, fine-tuned 27B) | 2.88 | Self-hosted |
+| 12 | DeepSeek V3.2 | 2.87 | Cloud |
+| 13 | Qwen3 235B A22B | 2.85 | Open |
+| 14 | Grok 4.1 Fast | 2.84 | Cloud |
+| 15 | Qwen3.5 27B | 2.77 | Open |
+| 16 | Qwen3 32B | 2.73 | Open |
+| 17 | Gemini 2.5 Flash | 2.67 | Cloud |
+| 18 | Llama 4 Maverick | 2.67 | Open |
+| 19 | **YandexGPT 5.1 Pro** | 2.66 | **Russian cloud** |
+| 20 | GLM 4.7 Flash | 2.63 | Cloud |
+| 21 | Qwen3 14B | 2.59 | Open |
+| 22 | Qwen3 8B | 2.58 | Open |
+| 23 | **GigaChat-2-Pro** | 2.58 | **Russian cloud** |
+| 24 | **GigaChat-2-Max** | 2.56 | **Russian cloud** |
+| 25 | **YandexGPT 5 Lite** | 2.47 | **Russian cloud** |
+| 26 | Command A | 2.38 | Cloud |
+| 27 | **GigaChat-2-Lite** | 2.33 | **Russian cloud** |
+| 28 | Phi-4 14B | 1.69 | Open |
 
-**Local (consumer hardware):** Qwen3-14B (16GB), Qwen3-32B Q4 (24GB), GigaChat-20B (16GB)
+See [data/scores/](data/scores/) for per-dimension breakdowns by judge.
 
 ## Key Findings
 
 1. **No existing benchmark** covers Russian K-12 education — EduBench-RU fills this gap
-2. **All models struggle with Chuvash** — only Claude Opus/Sonnet produce verifiably correct phrases
-3. **ФГОС awareness varies dramatically** — frontier models outperform open-source on pedagogical structure
-4. **Self-hostable models** (Qwen3-32B, GigaChat-20B) are viable for school deployment at reduced quality
+2. **Russian cloud LLMs (GigaChat, YandexGPT) rank #19-27** — optimized for general chat, not structured pedagogy
+3. **A $300 fine-tuned 27B model (#11) beats all Russian cloud LLMs** on education tasks
+4. **ФГОС awareness varies dramatically** — frontier models produce proper технологические карты; smaller models produce generic lesson outlines
+5. **All models struggle with Chuvash** — ChuvashBench scores 1.4-2.8 across all 28 models (reported separately)
+6. **Self-hosted models** are viable for 152-ФЗ compliant school deployment
 
 ## ChuvashBench
 
@@ -85,7 +116,7 @@ ChuvashBench evaluation requires native speaker validation. See [docs/chuvash-ev
 ```bibtex
 @misc{ivanov2026edubenchru,
   title={EduBench-RU: A Comprehensive Benchmark for Evaluating Large Language Models in Russian K-12 Education},
-  author={Ivanov, Daniel},
+  author={Ivanov, Daniel and Antonov, Alexander},
   year={2026},
   howpublished={\url{https://github.com/csylabs-org/edubench-ru}}
 }
