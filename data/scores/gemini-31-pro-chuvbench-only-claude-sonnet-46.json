@@ -1,0 +1,237 @@
+{
+  "model": {
+    "id": "google/gemini-3.1-pro-preview",
+    "label": "Gemini 3.1 Pro (ChuvBench only)"
+  },
+  "judge": {
+    "model": "anthropic/claude-sonnet-4.6",
+    "label": "Claude Sonnet 4.6"
+  },
+  "scores": [
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 2,
+        "cultural_context": 2,
+        "chuvash_accuracy": 3
+      },
+      "justification": "PEDAGOGICAL: Provides translation with a brief methodological note, but no structured lesson framing, learning objectives, or ФГОС alignment — generic translation task response. LANGUAGE: The Russian meta-commentary reads naturally in a teacher/методист register; the Chuvash explanatory note is appropriately framed. FACTUAL: Core translation is largely accurate; the alternative phrasing 'Сана кам теççĕ / Мана Маша теççĕ' is a legitimate and arguably more idiomatic Chuvash construction, showing awareness of actual usage. ACTIONABILITY: Offers two translation variants which is helpful, but no pronunciation guide, no contextual usage notes for classroom, no scaffolding for learners — stops short of a clear implementation plan. CULTURAL CONTEXT: No reference to Chuvash Republic educational context, ФГОС for minority languages, or regional curriculum — response is culturally neutral. CHUVASH ACCURACY: Special characters ă, ĕ, ç are used correctly; 'вунă' for 10 is correct; 'шкулта вĕренетĕп' is acceptable; 'Санăн ятăн мĕнле' is grammatically questionable as a natural greeting form compared to the offered alternative, slight awkwardness noted but not a clear error.",
+      "prompt_id": "D1.1",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 2,
+        "cultural_context": 2,
+        "chuvash_accuracy": 3
+      },
+      "justification": "Pedagogical quality is generic (2) — the response provides a translation with a minor note but lacks structured explanation, vocabulary breakdown, or learning scaffolding. Language quality is natural teacher register (3) — the Russian is fluent and the parenthetical note is appropriately phrased. Factual accuracy is accurate (3) — the translation is correct: эпĕ=я, çĕр çинче=на земле, пурăнатăп=живу, манăн=у меня, ашшĕ=отец/папа, тата=и, амăшĕ=мать/мама, пур=есть, шкулта=в школе, вĕренетĕп=учусь. The alternative translation note is valid. Actionability is low (2) — it delivers the translation but offers no further pedagogical steps or usage guidance. Cultural context is generic (2) — no mention of Chuvash linguistic features, ФГОС bilingual education context, or regional specificity. Chuvash accuracy is mostly correct (3) — special characters ă, ĕ, ç are present and correctly handled in the source; the translation accurately reflects the morphology, though no explicit verification source is cited.",
+      "prompt_id": "D1.2",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 4,
+        "chuvash_accuracy": 3
+      },
+      "justification": "Pedagogical quality is publication-ready: numbered grammar points, clear metalanguage, contrastive Russian-Chuvash analysis, and a pedagogical tip targeting predictable learner errors — fully ФГОС-compatible structure. Language quality is native методист register: smooth, professional, no stiffness, appropriate hedging ('буквально это переводится'). Factual accuracy is accurate but not enriched: the SOV explanation is correct, -сем plural is correct, местный падеж -нче is correct, -ла/-ле for sports is correct and well-explained, -пе совместный падеж is correct, вара as contrastive particle is correct; however 'картиш' as root for 'двор' is slightly simplified (the base form is 'карти' or 'картиш' depending on dialect), and the morphological split 'картиш+ĕ+нче' could be more precisely 'карти+шĕн+че' (genitive-locative construction), which is a minor but real inaccuracy. Actionability is ready-to-implement: the response can be used directly as a lesson handout with zero modification. Cultural context shows deep ФГОС awareness: Chuvash-specific linguistic context, mention of natural speech patterns ('урамра'), and targeting interference errors from Russian — all highly Russia/Chuvash Republic specific. Chuvash accuracy is mostly correct with proper diacritics (ă,ĕ,ç used appropriately in выляççĕ, сикеççĕ, картишĕнче, хĕрачасем), but the morphological analysis of картишĕнче contains a debatable segmentation, and 'сиккĕш' for скакалка, while plausible, is less standard than 'сиккĕç' in some sources, preventing a score of 4.",
+      "prompt_id": "D1.3",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 3,
+        "cultural_context": 3,
+        "chuvash_accuracy": 2
+      },
+      "justification": "PEDAGOGICAL: Well-structured dictionary with phonetic guide, examples, translations, and a methodological tip — clearly ФГОС-aware but not publication-ready. LANGUAGE: Natural teacher/metodist register, smooth Russian, minor stiffness in places. FACTUAL ACCURACY: Several issues — 'вӗрентекен' transcription shows inconsistent romanization mixing Cyrillic and Latin-style notation; 'тетрадь' transcription [т'итра́т'] is phonetically questionable; 'тӑхтав' for перемена is plausible but less common than 'тăхтав' or regional variants; 'паллӑ' for оценка is correct but the claim that тетрадь fully displaced 'ҫыру кӗнеки' is unverified. ACTIONABILITY: Clear structure, classroom-ready examples, usable methodological advice, though transcription system is inconsistent and would confuse teachers. CULTURAL CONTEXT: Acknowledges Russian loanwords, notes Chuvash phonetic rules, includes classroom context — Russian-specific but not deeply ФГОС-integrated. CHUVASH ACCURACY: Core vocabulary is mostly correct (кӗнеке, хӑма, килти ӗҫ, шкул), but transcription system mixes conventions unreliably; special characters ă/ĕ/ç/ÿ are used inconsistently (ӗ vs ĕ, ҫ vs ç); озвончение rule stated for вӗрентекен is phonologically dubious; overall mix of correct and questionable forms warrants score of 2.",
+      "prompt_id": "D1.4",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 4,
+        "chuvash_accuracy": 2
+      },
+      "justification": "Pedagogical quality is publication-level: two variants offered with explicit methodological rationale (syllable count, rhythm preservation, rhyme scheme), appropriate for a методист audience. Language quality is native методист register throughout — the Chuvash framing, the Russian metalanguage, and the pedagogical commentary all read naturally and professionally. Factual accuracy is accurate but not enriched: the translation choices are reasonable and the methodological claims about Chuvash children's folklore rhyme patterns are plausible, though unverified. Actionability is ready-to-implement: two concrete variants with clear use-case differentiation allow a teacher to choose immediately. Cultural context shows deep ФГОС/Russian pedagogical context awareness with explicit reference to Chuvash folk tradition and classroom application. Chuvash accuracy is the weakest dimension: the response uses Cyrillic-based Chuvash orthography (standard for modern Chuvash) rather than the Latin special characters (ă,ĕ,ç,ÿ) specified in the rubric, and some forms like 'ытлӑ-ҫитлӗ' as a greeting and the syllable count claim of 7 syllables per line are questionable. The core vocabulary (пӗр, ик, виҫ, тӑват, пилӗк, мулкач) appears correct, but mix of correct and potentially incorrect elements warrants a 2.",
+      "prompt_id": "D1.5",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 3,
+        "chuvash_accuracy": 2
+      },
+      "justification": "PEDAGOGICAL: Publication-quality structure with phonetic intro, lexical table, model dialogue, gap-fill exercise, answer key, and methodical tip — clear progression from input to output, fully ФГОС-compatible communicative approach. LANGUAGE: Native методист register throughout; warm but professional tone, smooth transitions, appropriate metalanguage ('речевой аппарат', 'редуцированный звук'). FACTUAL: Phrase meanings and usage notes are largely accurate (Сывă пулăр as plural/polite is correct; дословный перевод accurate), but 'Ырă кун' is more precisely 'good day' not a universal equivalent of 'Здравствуйте', and the ă phonetic description as 'between о and а' is imprecise — it is a central reduced vowel closer to schwa. ACTIONABILITY: Fully ready to implement — two-step exercise, answer key, recording tip, situational context provided; a teacher could use this tomorrow without modification. CULTURAL CONTEXT: Russian-specific in register and school context, but no deep ФГОС competency mapping, no reference to regional Chuvash Republic educational standards or authentic cultural situations beyond a generic shop scene. CHUVASH ACCURACY: Core spellings use ă/ĕ/ç correctly; however 'Тепĕр тĕлпуличчен' transcription [тель-пу-лич-чен] is phonetically misleading and the word 'тĕлпуличчен' itself is a debatable/non-standard form (more standard: 'тепĕр тĕл пуличчен'); 'Мĕнле пурăнатăн' is plausible but unverified; ÿ not used, suggesting limited phoneme coverage.",
+      "prompt_id": "D2.1",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 2,
+        "actionability": 4,
+        "cultural_context": 3,
+        "chuvash_accuracy": 2
+      },
+      "justification": "PEDAGOGICAL: Excellent structure with metaphors (Lego), contrast tables, cheat sheet format, progressive complexity, and a practical closing exercise — publication-ready. LANGUAGE: Fluent, warm teacher register throughout; natural transitions, appropriate enthusiasm without being patronizing. FACTUAL ACCURACY: Several issues: (1) Chuvash has 7 cases in most scholarly descriptions, not 8 — the 'совместный' with -пе is often classified as a postpositional form, not a true case; (2) дательный and винительный having identical forms is an oversimplification — the accusative is often unmarked for indefinite objects; (3) сингармонизм description is simplified but the vowel inventory listed is incomplete/slightly off; (4) 'Туху/Исходный' name is non-standard. ACTIONABILITY: Immediately usable — examples, paradigm table, practice sentences, and a clear starting recommendation make this ready to implement in a lesson. CULTURAL CONTEXT: References ФГОС-style methodology implicitly, addresses Russian-speaker specifically, but lacks explicit curriculum anchoring or regional educational context. CHUVASH ACCURACY: Special characters (ă, ĕ, ç, ÿ/ӳ) are used, which is positive. However: 'урамсемче' should be 'урамсенче' (assimilation rule); 'килӳ' for 'твой дом' is questionable — standard form is 'килу' or 'килĕву'; vowel harmony examples have inconsistencies; some transliterations are approximate rather than verified.",
+      "prompt_id": "D2.2",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 4,
+        "chuvash_accuracy": 3
+      },
+      "justification": "PEDAGOGICAL: Publication-quality structure with clear stage progression, TPR methodology named explicitly, bilingual-specific scaffolding (passive→active vocabulary), differentiation for advanced learners, and multimodal activities (kinesthetic, auditory, creative). Fully ФГОС-aligned with УУД development across all stages. LANGUAGE: Native методист register throughout — natural transitions, professional hedging ('наверняка слышали дома'), warm but precise tone, appropriate code-switching rationale. No stiffness. FACTUAL: Core family vocabulary is accurate. Minor concern: 'асанне' is correctly noted as paternal grandmother but the parenthetical simplification is pedagogically honest. 'Аппа' and 'пичче' correctly specify older sibling distinction, which is culturally important. 'Шăллăм/йăмăк' in the tip are correct. Score reduced from 4 because кукăль (пирожки) is a slight stretch — кукăль means pie/pastry, acceptable but imprecise. ACTIONABILITY: Fully ready to implement — timing per stage, exact teacher speech, materials list, differentiation notes, homework phrase. A substitute teacher could run this lesson. CULTURAL: Deep Chuvash cultural embedding — Уйăп as character name, кукăль reference, family hierarchy respect, personal family relevance tip. ФГОС воспитательный компонент explicitly addressed. CHUVASH ACCURACY: Finger rhyme is well-constructed and grammatically sound. Special characters ă, ĕ, ç, ÿ used correctly throughout (пӳрне, пурĕ, пĕрле, тĕспе, сăрлăр). Transcriptions in brackets use Russian approximations rather than IPA which is appropriate for the audience. Minor issue: 'ман çемье' vs 'манăн çемье' inconsistency in the rhyme final line (shortened form is used in poetry, acceptable). Phonetic stress markers in vocabulary section are non-standard but helpful. No hallucinated vocabulary detected.",
+      "prompt_id": "D2.3",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 3,
+        "chuvash_accuracy": 2
+      },
+      "justification": "PEDAGOGICAL: Excellent structure with glossing, morphological breakdown, vowel harmony explanation, paradigm table, and methodological tip — publication-quality scaffolding. LANGUAGE: Fluent, warm teacher register with smooth transitions; reads like an experienced методист. FACTUAL: Grammar explanation of -р-/-т- allomorphy and vowel harmony is largely correct, but 3rd person forms are oversimplified (вулар-ĕ vs килч-ĕ conflates two distinct paradigms without explaining the -ч- source), and the claim that -й triggers -р- is presented without nuance. ACTIONABILITY: Ready-to-use sentences, clear formula, table, and substitution suggestions (шкула/университет) make this immediately classroom-deployable. CULTURAL CONTEXT: Russian-language pedagogical framing is appropriate for the audience, ФГОС-style structure implied, but no explicit ФГОС references or Chuvash Republic educational context. CHUVASH ACCURACY: Several issues: 'ирпе ир' is redundant/unnatural (ирпе alone suffices); 'пит-куç çурăм' — çу means 'to wash' but the compound and form need verification; 'ĕçе кайрăм' is plausible but register varies; 'апат çирĕм' is correct; special characters (ă,ĕ,ç) are used consistently which is positive, but some forms appear reconstructed rather than verified against corpus or native speaker sources.",
+      "prompt_id": "D2.4",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 4,
+        "cultural_context": 3,
+        "chuvash_accuracy": 2
+      },
+      "justification": "PEDAGOGICAL: Solid structure with topic distribution (2 per theme), clear instructions, grading rubric with Chuvash labels — ФГОС-aligned but not publication-quality; no difficulty progression or competency mapping. LANGUAGE: Natural teacher register, warm tone appropriate for 3rd grade context, methodical framing is professional without being stiff. FACTUAL ACCURACY: Key error — Q1 answer marked as 'б' (Сывлăх сунатăп = 'I wish you health', a toast/wish, not standard greeting; 'Ырă кун' or 'Салам' would be more standard); Q2 'Сывă пул' correctly means 'goodbye/farewell' but answer key says 'б' which is correct — acceptable. These issues lower the score. ACTIONABILITY: Fully ready to print and use — has instructions, answer key, grading scale with Chuvash equivalents, and pedagogical notes. Highest marks here. CULTURAL CONTEXT: Uses Chuvash-language grading terms, references visual learning for third-graders, topics are culturally relevant (family, animals, nature), but no explicit ФГОС citation or regional curriculum alignment. CHUVASH ACCURACY: Special characters (ă, ĕ, ç) are used consistently, which is positive. However, 'Сывлăх сунатăп' as primary greeting is debatable/non-standard for classroom greeting context; 'Асатте' for grandfather is correct; core vocabulary (Йытă, Упа, Анне, Сарă, Шурă) appears correct, but the greeting section contains a conceptual error mixing wish-formulas with greetings.",
+      "prompt_id": "D2.5",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 3,
+        "chuvash_accuracy": 2
+      },
+      "justification": "PEDAGOGICAL: Full lesson structure with goals, vocabulary work, staged narrative, interactive elements, and methodical tips — publication-quality ФГОС alignment with age-appropriate scaffolding for 4th grade. LANGUAGE: Fluent, warm teacher register throughout; transitions between sections feel natural; methodist framing is confident and idiomatic. FACTUAL: Core facts about Акатуй (post-sowing timing, prayer rituals, борьба, скачки, столб) are accurate; 'свадьба плуга и земли' is a legitimate folk metaphor; however чăкăт is more accurately a cottage cheese cake/pastry than 'сыр', and the baran prize detail, while traditional, is presented as universal when it varies by region. ACTIONABILITY: Immediately deployable — timed sections, blitz questions with answers, two differentiated activities, projector tip; a teacher could run this lesson without modification. CULTURAL CONTEXT: Russian-specific in ФГОС framing and Chuvash Republic context, but stops short of deep ФГОС competency mapping or regional program references (e.g., Чувашия school curriculum documents). CHUVASH ACCURACY: Ака/туй etymology correct; кĕрешӳ, паттăр, чăкăт, шăпăр, параппан are real terms; Çĕр-Анне and Турă are legitimate; however 'алшăлли' is questionable (more standard is 'алшăл' or 'çĕлĕк' for headwear; towel is typically 'тутăр'); diacritics ă/ĕ/ç used but inconsistently (кĕрешӳ uses ӳ which is non-standard vs ÿ); mix of correct and uncertain forms warrants score of 2.",
+      "prompt_id": "D3.1",
+      "module": "D",
+      "category": "Cultural Context"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 4,
+        "chuvash_accuracy": 3
+      },
+      "justification": "PEDAGOGICAL: Publication-quality structure with clear theory/practice split, scaffolded 5-step student instructions, explicit assessment criteria, and age-appropriate differentiation (5-7 classes). Fully ФГОС-aligned with meta-subject competencies (design thinking, self-expression, cultural literacy). LANGUAGE: Native методист register throughout — natural transitions, appropriate formality shifts between teacher and student sections, idiomatic pedagogical phrasing ('защитить идею', 'паспорт узора'). Zero grammatical errors. FACTUAL: Core symbolism (solar rosette, Tree of Life, geometric constraints, color triad) is well-grounded in Chuvash ethnographic tradition. Minor concerns: the 'runic writing' framing is a popular simplification debated among scholars; triangle gender symbolism (male/female) is present in some sources but not universally verified for Chuvash specifically; 'Глаз (Куç)' as distinct element is less documented than others. No outright errors. ACTIONABILITY: Fully ready-to-implement — lesson title, objectives, step-by-step student worksheet, worked example with student voice, and rubric with 4 clear criteria. Teacher could use this without modification. CULTURAL CONTEXT: Deep ФГОС integration — regional cultural identity, spiritual-moral development, connects to living Chuvash cultural practice. Framing of ornament as 'sign system' reflects current ethnographic discourse in Russian regional education. CHUVASH ACCURACY: Diacritics (ă, ĕ, ç) used correctly and consistently: чăваш тĕрри, Шурă, Хĕрлĕ, Хура, Ешĕл, Сарă, Хĕвел, Пурнăç йывăçĕ, Çĕр, Шыв correctly formed. Minor deduction: 'Тĕссем' and 'Тĕп паллăсем' are plausible but unverified terminological choices; 'Тĕрĕ чĕлхи' as lesson title is reasonable but not a standard attested phrase.",
+      "prompt_id": "D3.2",
+      "module": "D",
+      "category": "Cultural Context"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 4,
+        "cultural_context": 3,
+        "chuvash_accuracy": 2
+      },
+      "justification": "PEDAGOGICAL: Well-structured with headers, consistent format, methodical tip at end — ФГОС-aligned but not publication-quality; lacks age differentiation or learning objectives. LANGUAGE: Natural teacher register, warm tone, bilingual greeting adds authenticity; occasional slight over-enthusiasm ('гениальный', 'золотыми буквами') borders on non-neutral. FACTUAL: Several issues — Nikolaev's callsign was 'Сокол' but the free-float claim needs verification; Ivanov born in Slakbash is correct but calling him 'просветитель' is secondary to poet; Yakovlev's alphabet creation date and 400 schools figure are approximate/unverified; 'Халал' translation as 'Завещание' is acceptable but simplified. ACTIONABILITY: Excellent — ready-to-print format, ~100 words each, QR code suggestion, portrait recommendation; genuinely implementable immediately. CULTURAL CONTEXT: Good Russian-specific grounding, mentions real local landmarks (Shorshelы memorial), Simbirsk school, regional pride framing; could reference ФГОС regional component more explicitly. CHUVASH ACCURACY: 'Чăваш халăхĕн мухтавлă ывăлĕсем' and 'Ăнăçу сунатăп' appear plausible with correct special characters, but 'ÿ' absent entirely, phrases unverified by native source; mix of likely correct and unverified forms.",
+      "prompt_id": "D3.3",
+      "module": "D",
+      "category": "Cultural Context"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 4,
+        "chuvash_accuracy": 3
+      },
+      "justification": "PEDAGOGICAL: Publication-quality structure with clear триединая цель, staged activity progression (введение→закрепление→практика→рефлексия), TPR method named explicitly, age-appropriate variety, methodological commentary embedded — meets ФГОС UUD requirements fully. LANGUAGE: Native методист register throughout; seamless code-switching modeled correctly; metalinguistic commentary ('Методическая ремарка') is professional; домашнее задание framing is natural. FACTUAL: The grammatical note about Кам/Мӗн distinction is accurate and pedagogically valuable. Core vocabulary is correct. Minor concern: 'Тиин' for squirrel is an acceptable variant but the more standard form is 'тиен' in some sources, creating slight uncertainty. 'Чӗрӗп' for hedgehog is correct. ACTIONABILITY: Fully ready to implement — timing per stage specified, teacher speech scripted in both languages, materials listed, differentiation implicit in pair work, homework concrete and creative. CULTURAL: Deep ФГОС integration — тӑван ен framing, Chuvash forest fauna specifically, bilingual lesson structure reflects regional component requirements, cultural-linguistic contrast (animacy distinction) taught explicitly. CHUVASH ACCURACY: Most forms correct with proper diacritics (ӑ,ӗ,ӳ used appropriately). 'Мулкач' (hare), 'Кашкӑр' (wolf), 'Упа' (bear), 'Тилӗ' (fox) are verified correct. 'Тиин' is debatable spelling. 'Ку мӗн' construction is accurate. Some verbal forms (утатпӑр, сикетпӗр) appear plausible but would benefit from native speaker verification. ç character absent from Chuvash text where expected (e.g., ҫухалчӗ uses ҫ correctly). Overall mostly correct but not fully verified.",
+      "prompt_id": "D4.1",
+      "module": "D",
+      "category": "Bilingual"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 3,
+        "chuvash_accuracy": 2
+      },
+      "justification": "PEDAGOGICAL: Publication-quality structure — five tasks with graduated difficulty (translation→grammar→logic→culture→creative), clear point distribution totaling 25, rubric with partial credit logic, and a methodological note on communicative approach. Fully ФГОС-aligned with meta-subject competencies addressed. LANGUAGE: Native методист register throughout; seamless code-switching between Russian and Chuvash headers; the closing pedagogical advice reads as authentic professional guidance, not templated output. FACTUAL: Cultural facts (Yakovlev, Ivanov/Narspi, Akатуй, Shupashkar) are correct. However, the grammar key contains a significant error: claiming 'сĕтелте' is equivalent to 'сĕтел çинче' conflates locative case with a postpositional phrase with different spatial meaning. The note about numerals/нумай suppressing plural -сем is correct but the expected answer 'кайăк' (singular) needs clearer explanation. ACTIONABILITY: Fully ready to print and administer — answer keys, scoring rubrics, partial-credit rules, and teacher notes are all present. A judge could use this without modification. CULTURAL CONTEXT: Russian-specific context with Chuvash Republic references (Шупашкар, Акатуй, Яковлев, Иванов), but stops short of deep ФГОС integration — no explicit УУД mapping, no reference to regional curriculum standards or примерная программа по чувашскому языку. CHUVASH ACCURACY: Special characters ă, ĕ, ç, ÿ are used, but inconsistently — 'ӳкерет' uses Cyrillic ӳ rather than the standard ÿ; the example student text 'вылясшăн' is morphologically questionable; 'вулатпăр' offered as alternative present-tense translation mixes aspects incorrectly with past-tense context; 'аннене' dative is correct but the framing as a 'trap' question is pedagogically misleading since it is straightforward dative usage.",
+      "prompt_id": "D4.2",
+      "module": "D",
+      "category": "Bilingual"
+    }
+  ]
+}

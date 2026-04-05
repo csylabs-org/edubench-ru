@@ -21,3 +21,5 @@ Thumbs.db
 
 # Large model outputs (tracked via git-lfs or separate storage)
 # data/results/*.json files ARE tracked (benchmark outputs are the product)
+.env.*
+secrets/

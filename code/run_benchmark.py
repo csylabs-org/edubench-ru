@@ -34,6 +34,7 @@ with open(DATA_DIR / "prompts.json") as f:
 
 PROMPTS = BENCHMARK["prompts"]
 SYSTEM_PROMPT = BENCHMARK["system_prompt"]
+SYSTEM_PROMPT_CHUVASH = BENCHMARK.get("system_prompt_chuvash", SYSTEM_PROMPT)
 MAX_TOKENS = BENCHMARK["max_tokens"]
 TEMPERATURE = BENCHMARK["temperature"]
 
@@ -83,7 +84,7 @@ def run_prompt(api_key: str, model_id: str, prompt: dict) -> dict:
             json={
                 "model": model_id,
                 "messages": [
-                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "system", "content": SYSTEM_PROMPT_CHUVASH if prompt.get("module") == "D" else SYSTEM_PROMPT},
                     {"role": "user", "content": prompt["text"]},
                 ],
                 "max_tokens": MAX_TOKENS,

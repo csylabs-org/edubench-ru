@@ -34,7 +34,7 @@ OPENROUTER_URL = "https://openrouter.ai/api/v1"
 JUDGE_PANEL = [
     {"model": "openai/gpt-5.4", "label": "GPT-5.4"},
     {"model": "anthropic/claude-sonnet-4.6", "label": "Claude Sonnet 4.6"},
-    {"model": "google/gemini-2.5-pro", "label": "Gemini 2.5 Pro"},
+    {"model": "google/gemini-3.1-pro-preview", "label": "Gemini 3.1 Pro"},
 ]
 
 # Default single judge (overridden by --panel flag)
@@ -126,10 +126,20 @@ def score_response(api_key: str, prompt_id: str, response_text: str) -> dict:
     rubric = RUBRIC_BASE + (RUBRIC_CHUVASH if is_chuvash else "")
     chuvash_field = ',\n    "chuvash_accuracy": <1-4>' if is_chuvash else ""
 
+    # Strip thinking/reasoning blocks — models like Qwen3.5 emit English CoT before Russian answer.
+    # The judge should score the actual pedagogical response, not the internal reasoning.
+    clean_response = response_text
+    for marker in ["\n\n---\n\n", "\n\n# ", "\n\n## ", "\n\n**Технологическая", "\n\n**ТЕХНОЛОГИЧЕСКАЯ",
+                   "\n\nТехнологическая карта", "\n\n**Предмет", "\n\n| Параметр"]:
+        idx = clean_response.find(marker)
+        if idx > 200 and idx < len(clean_response) * 0.7:  # Thinking is in first 70% of output
+            clean_response = clean_response[idx:].lstrip("\n -")
+            break
+
     judge_prompt = JUDGE_PROMPT_TEMPLATE.format(
         rubric=rubric,
         prompt_text=prompt_text,
-        response_text=response_text[:6000],  # Truncate very long responses for judge context
+        response_text=clean_response[:8000],  # Increased from 6000 to capture full answer
         chuvash_field=chuvash_field,
     )
 
@@ -144,8 +154,36 @@ def score_response(api_key: str, prompt_id: str, response_text: str) -> dict:
             json={
                 "model": JUDGE_MODEL,
                 "messages": [{"role": "user", "content": judge_prompt}],
-                "max_tokens": 512,
+                "max_tokens": 4096,
                 "temperature": 0.0,  # Deterministic scoring
+                "response_format": {
+                    "type": "json_schema",
+                    "json_schema": {
+                        "name": "ScoringResult",
+                        "strict": True,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "scores": {
+                                    "type": "object",
+                                    "properties": {
+                                        "pedagogical_quality": {"type": "integer"},
+                                        "language_quality": {"type": "integer"},
+                                        "factual_accuracy": {"type": "integer"},
+                                        "actionability": {"type": "integer"},
+                                        "cultural_context": {"type": "integer"},
+                                        "chuvash_accuracy": {"type": "integer"}
+                                    },
+                                    "required": ["pedagogical_quality", "language_quality", "factual_accuracy", "actionability", "cultural_context", "chuvash_accuracy"],
+                                    "additionalProperties": False
+                                },
+                                "justification": {"type": "string"}
+                            },
+                            "required": ["scores", "justification"],
+                            "additionalProperties": False
+                        }
+                    }
+                },
             },
             timeout=60,
         )
@@ -405,7 +443,7 @@ def main():
     result_files = sorted(RESULTS_DIR.glob("*.json"))
 
     if args.model:
-        result_files = [f for f in result_files if args.model.lower() in f.stem.replace("-", " ")]
+        result_files = [f for f in result_files if args.model.lower().replace("-", " ") in f.stem.replace("-", " ")]
         if not result_files:
             print(f"No results found for: {args.model}")
             sys.exit(1)

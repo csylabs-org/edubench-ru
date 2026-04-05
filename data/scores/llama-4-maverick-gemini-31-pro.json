@@ -1,0 +1,726 @@
+{
+  "model": "llama-4-maverick",
+  "judge": "gemini-31-pro",
+  "judge_model": "google/gemini-3.1-pro-preview",
+  "timestamp": "2026-03-24T23:57:04",
+  "total": 50,
+  "scored": 50,
+  "failed": 0,
+  "scores": [
+    {
+      "prompt_id": "A1.1",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 2,
+        "cultural_context": 3
+      },
+      "justification": "The response provides a structurally correct but highly generic template for a lesson plan. It uses appropriate Russian pedagogical terminology and references FGOS standards, but lacks specific educational content, concrete exercises, or differentiation, making it difficult to use directly in the classroom without significant additional work.",
+      "elapsed": 9.1,
+      "thinking_tokens": 593
+    },
+    {
+      "prompt_id": "A1.2",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "План урока имеет четкую структуру, соответствует запросу и включает дифференцированные задания. Однако хронометраж этапов в сумме дает 55 минут вместо стандартных для российской школы 45 минут, а предложенный алгоритм решения уравнений содержит логическое противоречие (сначала приведение к виду ax+b=0, а затем перенос переменных). Язык грамотный, присутствуют отсылки к ФГОС, но для максимального балла не хватает детализации УУД в целях урока.",
+      "elapsed": 12.0,
+      "thinking_tokens": 958
+    },
+    {
+      "prompt_id": "A1.3",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "План урока имеет четкую структуру, соответствует заявленной теме и возрасту учащихся (2 класс), включает игровые элементы, групповую работу и дифференциацию. Язык ответа естественный и использует профессиональную педагогическую терминологию. Однако для получения высших баллов не хватает более глубокой интеграции с современными требованиями ФГОС (например, прописывания конкретных УУД вместо устаревшего деления задач на образовательные, развивающие и воспитательные) и большей детализации дидактических материалов.",
+      "elapsed": 11.4,
+      "thinking_tokens": 778
+    },
+    {
+      "prompt_id": "A1.4",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 2,
+        "cultural_context": 3
+      },
+      "justification": "План урока имеет четкую структуру и написан грамотным языком, однако содержит фактическую ошибку в хронометраже (52 минуты в сумме вместо стандартных 45). Педагогическая ценность снижена из-за отсутствия связи фонетической разминки с грамматической темой (вместо отработки окончаний -s/-es предложены случайные гласные звуки) и нехватки конкретных опорных материалов (scaffolding) для парной работы. Упоминание ФГОС присутствует, но носит формальный характер, так как цели урока не конкретизированы через предметные, метапредметные и личностные УУД.",
+      "elapsed": 16.8,
+      "thinking_tokens": 1489
+    },
+    {
+      "prompt_id": "A1.5",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "План урока имеет четкую структуру и включает все запрошенные элементы, однако общий хронометраж этапов составляет 55 минут, что превышает стандартный 45-минутный урок, а цели не расписаны по видам УУД (предметные, метапредметные, личностные). Язык ответа грамотный и соответствует профессиональному стилю учителя, исторические факты точны, но для полной практической применимости не хватает конкретных текстов источников. Упоминание ФГОС и использование традиционных методических терминов (актуализация, рефлексия) обеспечивают адекватный образовательный контекст РФ.",
+      "elapsed": 10.9,
+      "thinking_tokens": 781
+    },
+    {
+      "prompt_id": "A2.1",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 4,
+        "factual_accuracy": 4,
+        "actionability": 3,
+        "cultural_context": 2
+      },
+      "justification": "Ответ предлагает ясное и соответствующее возрасту объяснение дробей с использованием понятных примеров (пицца, шоколад). Язык естественный и идеально подходит для 9-летнего ребенка, однако ответ не содержит специфического российского образовательного контекста или упоминаний ФГОС, что логично для общения с учеником, но ограничивает оценку по культурному контексту.",
+      "elapsed": 9.8,
+      "thinking_tokens": 680
+    },
+    {
+      "prompt_id": "A2.2",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 4,
+        "factual_accuracy": 4,
+        "actionability": 3,
+        "cultural_context": 2
+      },
+      "justification": "Ответ представляет собой четкое, математически точное и соответствующее возрасту (8 класс) объяснение теоремы Пифагора, строго следующее запрошенной структуре. Язык естественный, терминология используется безупречно, а примеры подобраны грамотно (использованы классические пифагоровы тройки). Однако ответ не содержит специфических отсылок к российскому образовательному контексту (ФГОС, подготовка к ОГЭ или привязка к популярным учебникам геометрии), что снижает оценку за культурный контекст.",
+      "elapsed": 10.9,
+      "thinking_tokens": 690
+    },
+    {
+      "prompt_id": "A2.3",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 2
+      },
+      "justification": "The response effectively explains the concept to a 5th grader using a clear, hands-on analogy with a flashlight and a ball. The language is accessible and scientifically accurate for the age group, though it lacks specific references to the Russian educational context or geography. The practical experiment is well-structured and easy for a child to follow.",
+      "elapsed": 12.1,
+      "thinking_tokens": 1016
+    },
+    {
+      "prompt_id": "A2.4",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 4,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "Ответ точно и доступно для четвероклассника объясняет исторические причины возникновения орфограммы, демонстрируя высокую фактическую точность. Язык грамотный, однако предложенное стихотворение имеет слабые рифму и ритм, что немного снижает качество материала. В целом, текст практичен и полностью соответствует программе по русскому языку для российской начальной школы.",
+      "elapsed": 10.9,
+      "thinking_tokens": 710
+    },
+    {
+      "prompt_id": "A2.5",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 2,
+        "cultural_context": 2
+      },
+      "justification": "Текст написан понятным языком, однако попытка нарисовать электронную схему символами оказалась неудачной и запутанной. Упоминание ковалентной связи между металлами и неметаллами, хотя и технически возможно в химии, противоречит базовой школьной программе 9 класса и может привести к ошибкам на ОГЭ. Ответ носит общий характер и не содержит привязки к российским образовательным стандартам (ФГОС) или специфике подготовки к экзаменам.",
+      "elapsed": 13.9,
+      "thinking_tokens": 985
+    },
+    {
+      "prompt_id": "A3.1",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "Ответ демонстрирует грамотный анализ результатов ОГЭ с верным расчетом процентов и адекватными педагогическими выводами. Предложенный двухмесячный план логично структурирован, включает дифференциацию и мониторинг, хотя ему немного не хватает предметной специфики (конкретных тем по математике). Язык и терминология полностью соответствуют стилю российского учителя.",
+      "elapsed": 9.6,
+      "thinking_tokens": 657
+    },
+    {
+      "prompt_id": "A3.2",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 3,
+        "cultural_context": 2
+      },
+      "justification": "Ответ имеет четкую структуру с этапами, сроками и критериями успеха, что делает его достаточно практичным. Однако с педагогической и фактической точек зрения он слишком обобщен: смешение рукописных «б» и «д» — это классическое проявление оптической или кинетической дисграфии, связанное с направлением «хвостиков» (вверх/вниз), что требует специфических логопедических приемов (например, мнемонических ассоциаций «белка-дятел»), а не простого показа карточек. Кроме того, полностью отсутствует привязка к российским реалиям, терминологии (дисграфия) и ФГОС НОО.",
+      "elapsed": 12.8,
+      "thinking_tokens": 910
+    },
+    {
+      "prompt_id": "A3.3",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 4,
+        "actionability": 4,
+        "cultural_context": 3
+      },
+      "justification": "The response provides a well-structured, grade-appropriate geometry test with mathematically accurate problems and answers. The language is natural and fits the Russian educational context, utilizing standard grading scales (3, 4, 5) and typical difficulty tiers. However, the grading criteria could be formulated more clearly in a cumulative manner, and explicit references to ФГОС are missing.",
+      "elapsed": 11.1,
+      "thinking_tokens": 835
+    },
+    {
+      "prompt_id": "A3.4",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 2,
+        "factual_accuracy": 3,
+        "actionability": 2,
+        "cultural_context": 2
+      },
+      "justification": "Ответ имеет логичную структуру, но предлагает слишком общие и абстрактные решения, лишенные методической глубины (например, нет упоминания формирующего оценивания или критериальных рубрик). Язык правильный, но сухой и шаблонный, с повторением формулировок из промпта. Культурный контекст учтен слабо: игнорируются реалии российской школы (например, использование ЭЖД), а совет пригласить родителя на уроки малоприменим на практике без сложной бюрократической процедуры.",
+      "elapsed": 10.9,
+      "thinking_tokens": 725
+    },
+    {
+      "prompt_id": "A3.5",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 1,
+        "cultural_context": 2
+      },
+      "justification": "Ответ получился слишком поверхностным и обобщенным, без упоминания специфики реальных КИМов (например, сжатого изложения в ОГЭ или задания 27 в ЕГЭ) и критериев ФИПИ. Рекомендации для учителя носят абсолютно абстрактный характер («учите внимательно читать», «проводите тесты») и не предлагают конкретных методических шагов или связи с ФГОС.",
+      "elapsed": 11.2,
+      "thinking_tokens": 844
+    },
+    {
+      "prompt_id": "B1.1",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 4,
+        "factual_accuracy": 4,
+        "actionability": 3,
+        "cultural_context": 2
+      },
+      "justification": "The response provides a mathematically flawless and clearly structured explanation of the three methods for solving a quadratic equation, using perfect Russian mathematical terminology. However, it lacks explicit references to the Russian educational standards (ФГОС/ОГЭ) and does not include advanced pedagogical elements like differentiation.",
+      "elapsed": 9.1,
+      "thinking_tokens": 712
+    },
+    {
+      "prompt_id": "B1.2",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 2,
+        "cultural_context": 2
+      },
+      "justification": "The response provides a basic morphological analysis but fails to follow the standard Russian school format, missing crucial elements like initial forms, the division into constant and non-constant features, declensions, and conjugations. Additionally, there is a syntactic error, as 'над рекой' should be classified as an adverbial modifier of place (обстоятельство), not an object (дополнение). Despite claiming alignment with ФГОС, the structural omissions and inaccuracies make it unsuitable for direct use in a Russian classroom without corrections.",
+      "elapsed": 11.5,
+      "thinking_tokens": 936
+    },
+    {
+      "prompt_id": "B1.3",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 4,
+        "actionability": 3,
+        "cultural_context": 2
+      },
+      "justification": "The response provides a clear, factually accurate, and grade-appropriate explanation with a correctly calculated numerical example. The language is natural and uses standard Russian physics terminology. However, it lacks explicit references to Russian educational standards (ФГОС) and pedagogical differentiation to achieve the highest scores in cultural context and pedagogical quality.",
+      "elapsed": 15.5,
+      "thinking_tokens": 1385
+    },
+    {
+      "prompt_id": "B1.4",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 2,
+        "cultural_context": 2
+      },
+      "justification": "The response contains severe factual errors in literary theory (e.g., incorrectly identifying 'безмолвно, безнадежно' as anaphora and 'так искренно, так нежно' as a comparison), making it unusable for teaching. Furthermore, while it mentions the OGE, the suggested tasks and criteria do not reflect the actual format or requirements of the OGE in Literature. The language is somewhat repetitive and contains a noticeable typo ('градаци').",
+      "elapsed": 11.3,
+      "thinking_tokens": 810
+    },
+    {
+      "prompt_id": "B1.5",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "Ответ точно и ясно решает поставленную задачу, предоставляя исторически достоверные причины и последствия, подходящие для школьного урока. Сформулированный проблемный вопрос и полярные точки зрения отлично вписываются в системно-деятельностный подход (ФГОС) и готовы к использованию для организации дискуссии, однако ответу не хватает более глубокой методической проработки и дифференциации для максимального балла.",
+      "elapsed": 10.2,
+      "thinking_tokens": 698
+    },
+    {
+      "prompt_id": "B1.6",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 4,
+        "factual_accuracy": 4,
+        "actionability": 4,
+        "cultural_context": 3
+      },
+      "justification": "Ответ полностью соответствует запросу: составлена корректная задача для 8 класса с практическим контекстом и подробным пошаговым решением. Язык и терминология безупречны и соответствуют стилю российских учебников физики, а также присутствует уместное упоминание ФГОС, что делает материал готовым к использованию на уроке.",
+      "elapsed": 8.4,
+      "thinking_tokens": 505
+    },
+    {
+      "prompt_id": "B1.7",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 4,
+        "actionability": 3,
+        "cultural_context": 2
+      },
+      "justification": "Ответ представляет собой грамотное, биологически точное и хорошо структурированное объяснение, идеально подходящее для учеников 9 класса. Таблица и примеры изложены понятным языком и готовы к использованию в качестве учебного материала. Однако в тексте отсутствуют специфические привязки к российскому образовательному контексту (например, упоминания ФГОС или подготовки к ОГЭ), что делает его универсальным, но лишенным региональной специфики.",
+      "elapsed": 11.0,
+      "thinking_tokens": 832
+    },
+    {
+      "prompt_id": "B1.8",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 1,
+        "actionability": 2,
+        "cultural_context": 2
+      },
+      "justification": "Ответ содержит грубые фактические ошибки в подборе проверочных слов (для слова «листок» указано несуществующее «лест», для «глядеть» — слово с другим корнем «глаз»). Кроме того, подобранная лексика слишком проста и не соответствует уровню 5 класса (это программа начальной школы), а формат с пропусками букв подразумевает работу по карточкам, а не словарный диктант на слух.",
+      "elapsed": 17.6,
+      "thinking_tokens": 1567
+    },
+    {
+      "prompt_id": "B1.9",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 4,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "The response provides a mathematically accurate, step-by-step solution perfectly aligned with the 8th-grade Russian geometry curriculum. The language is natural and uses correct mathematical terminology, while the explicit mention of FGOS and specific grade-level topics adds relevant educational context.",
+      "elapsed": 10.0,
+      "thinking_tokens": 586
+    },
+    {
+      "prompt_id": "B1.10",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 2,
+        "cultural_context": 2
+      },
+      "justification": "The model provides a grade-appropriate essay sample with natural language, but it falls slightly short of the requested 200-300 word count and relies on somewhat generic historical statements. Furthermore, it acts only as a direct text generation without offering any pedagogical guidance, actionable steps for the teacher on how to use the sample, or explicit alignment with Russian educational standards (ФГОС).",
+      "elapsed": 17.9,
+      "thinking_tokens": 1623
+    },
+    {
+      "prompt_id": "C1.1",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 4,
+        "factual_accuracy": 4,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "Ответ представляет собой грамотно структурированное календарно-тематическое планирование, точно соответствующее российской школьной программе по математике для 5 класса. Даты и распределение часов рассчитаны безупречно, используется правильная методическая терминология (контрольные работы, анализ, резервные уроки). Для получения высших баллов по педагогике и культурному контексту не хватает колонок с УУД (универсальными учебными действиями) и явных отсылок к требованиям ФГОС.",
+      "elapsed": 13.4,
+      "thinking_tokens": 1073
+    },
+    {
+      "prompt_id": "C1.2",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "Ответ представляет собой грамотно структурированную характеристику, полностью соответствующую негласным стандартам российского школьного делопроизводства. Язык и стиль (уместный канцелярит, профессиональные формулировки вроде «ситуация успеха») идеально подходят для данного типа документа. Рекомендации практичны и логично вытекают из описанных в промпте особенностей ученика.",
+      "elapsed": 10.8,
+      "thinking_tokens": 720
+    },
+    {
+      "prompt_id": "C1.3",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 2,
+        "cultural_context": 2
+      },
+      "justification": "The response provides a basic, structurally sound comparison but lacks depth and specific pedagogical terminology. It fails to integrate the Russian educational context (e.g., ФГОС НОО) and offers only abstract, generic advice for adapting Montessori methods to large classrooms without concrete, actionable steps.",
+      "elapsed": 7.7,
+      "thinking_tokens": 510
+    },
+    {
+      "prompt_id": "C1.4",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 2,
+        "factual_accuracy": 3,
+        "actionability": 2,
+        "cultural_context": 1
+      },
+      "justification": "The response provides basic, factually correct advice for accommodating ADHD and dyslexia but completely lacks Russian educational context, failing to mention crucial elements like ФГОС ОВЗ, ПМПК, or АООП. The language is somewhat unnatural and even includes an untranslated English phrase ('desks organizers'), while the recommendations remain too generic for immediate, structured implementation by a teacher.",
+      "elapsed": 8.8,
+      "thinking_tokens": 548
+    },
+    {
+      "prompt_id": "C1.5",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 2,
+        "cultural_context": 2
+      },
+      "justification": "Ответ представляет собой лишь общий план собрания, а не готовый сценарий: отсутствует фактическое наполнение информационного блока и текст раздаточных материалов. Хотя язык корректен и присутствуют упоминания ОГЭ и ФГОС, они носят поверхностный характер и не отражают специфику подготовки именно в 7 классе (например, связь с ВПР или профилизацией).",
+      "elapsed": 9.8,
+      "thinking_tokens": 662
+    },
+    {
+      "prompt_id": "C1.6",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "Ответ предлагает три конкретных и соответствующих возрасту метода проверки понимания, которые легко внедрить на уроке биологии в 6 классе. Критерии оценивания прописаны четко, а терминология и структура ответа соответствуют профессиональному языку учителя и упоминают ФГОС. Однако для максимальной оценки не хватает описания механизма обратной связи (как именно результаты помогут скорректировать обучение), что является ключевой сутью формативного оценивания.",
+      "elapsed": 10.5,
+      "thinking_tokens": 705
+    },
+    {
+      "prompt_id": "C1.7",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "The response provides a well-structured and pedagogically sound analysis of the situation, offering a clear and actionable strategy for the teacher. It uses natural professional language and appropriately references the Russian educational context (OGE, FGOS), though it lacks the deep innovation or highly detailed timelines required for a perfect score.",
+      "elapsed": 9.0,
+      "thinking_tokens": 708
+    },
+    {
+      "prompt_id": "C1.8",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 2
+      },
+      "justification": "Ответ представляет собой базовую, но рабочую рубрику оценивания с корректной шкалой перевода баллов в оценки. Однако дескрипторы носят слишком общий и субъективный характер (используются слова «частично», «достаточно» вместо конкретных измеримых показателей), а также полностью отсутствует специфика российского контекста — нет привязки к требованиям ФГОС ООО к обязательному индивидуальному итоговому проекту в 9 классе и оценке метапредметных результатов (УУД).",
+      "elapsed": 9.9,
+      "thinking_tokens": 606
+    },
+    {
+      "prompt_id": "C1.9",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 2,
+        "factual_accuracy": 4,
+        "actionability": 4,
+        "cultural_context": 2
+      },
+      "justification": "The model provides a fully structured and ready-to-use template that accurately incorporates all the requested facts about the student. However, the text reads like a direct translation of a Western recommendation letter (using calques like 'имел удовольствие наблюдать' and 'естественным лидером') rather than utilizing the traditional Russian formal style ('характеристика') or mentioning specific Russian educational realities like ВсОШ.",
+      "elapsed": 13.7,
+      "thinking_tokens": 966
+    },
+    {
+      "prompt_id": "C1.10",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 3
+      },
+      "justification": "Ответ предлагает четко структурированный план внеурочной деятельности, который точно отражает 34-недельный российский учебный год (34, 68 и 17 часов). Используется корректная педагогическая терминология и упоминается ФГОС ООО, однако сами программы достаточно шаблонны и не содержат детального календарно-тематического планирования для немедленного внедрения.",
+      "elapsed": 9.2,
+      "thinking_tokens": 541
+    },
+    {
+      "prompt_id": "D1.1",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 2,
+        "cultural_context": 2,
+        "chuvash_accuracy": 2
+      },
+      "justification": "Модель допустила грубую ошибку в переводе фразы «Доброе утро!», переведя ее как «Кун пек!» (что бессмысленно в данном контексте) вместо правильного «Ырă ир!». Остальная часть перевода выполнена приемлемо, хотя грамматически могла бы быть точнее («Манăн ятăм Маша»). Поскольку запрос представляет собой простой перевод, педагогические и методические критерии оцениваются невысоко из-за отсутствия образовательного контекста.",
+      "elapsed": 9.9,
+      "thinking_tokens": 721
+    },
+    {
+      "prompt_id": "D1.2",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 4,
+        "factual_accuracy": 4,
+        "actionability": 2,
+        "cultural_context": 2,
+        "chuvash_accuracy": 4
+      },
+      "justification": "Модель предоставила абсолютно точный и грамматически правильный перевод предложений с чувашского языка на русский. Поскольку запрос представлял собой простую задачу на перевод, ответ не содержит педагогической структуры, плана действий или ссылок на ФГОС, что отражено в соответствующих оценках.",
+      "elapsed": 9.4,
+      "thinking_tokens": 749
+    },
+    {
+      "prompt_id": "D1.3",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 2,
+        "factual_accuracy": 2,
+        "actionability": 2,
+        "cultural_context": 2,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The model starts with a contradictory statement ('I cannot translate... but I can offer a translation') and provides a Chuvash translation with unnatural lexical choices, such as using 'ывăлсем' (sons) instead of 'арçын ачасем' (boys) and an awkward, likely hallucinated phrasing for jumping rope ('сирпĕнчĕк çинче сирпĕнеççĕ'). While the grammatical breakdown of affixes is factually correct, the response lacks pedagogical structure, actionable teaching steps, and alignment with Russian educational standards.",
+      "elapsed": 14.9,
+      "thinking_tokens": 1117
+    },
+    {
+      "prompt_id": "D1.4",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 2,
+        "cultural_context": 2,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The response provides the requested list of 10 school terms, but the Chuvash translations contain significant grammatical and lexical errors (e.g., using 'çыртă' which means 'bit' instead of 'çырчĕ' for 'wrote', 'алăм' instead of 'илтĕм', and 'улăшăв' instead of 'тăхтав' for school break). Additionally, the 'transcription' is merely a syllable breakdown rather than a phonetic guide, and there are issues with using Latin characters instead of Cyrillic for the letter 'ĕ'. While the Russian language quality is good, the factual and Chuvash accuracy issues make the material unusable without major corrections.",
+      "elapsed": 18.6,
+      "thinking_tokens": 1402
+    },
+    {
+      "prompt_id": "D1.5",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 2,
+        "cultural_context": 2,
+        "chuvash_accuracy": 3
+      },
+      "justification": "The model fails to fulfill the primary request of providing a rhyming translation, instead offering a literal translation with a slightly inaccurate word choice ('уявлама' means 'to celebrate', not 'to walk'). While the Chuvash spelling and special characters are correct, the response lacks pedagogical value and actionable educational content, serving more as a generic translation disclaimer.",
+      "elapsed": 11.4,
+      "thinking_tokens": 858
+    },
+    {
+      "prompt_id": "D2.1",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 1,
+        "actionability": 2,
+        "cultural_context": 2,
+        "chuvash_accuracy": 1
+      },
+      "justification": "Хотя ответ имеет четкую структуру упражнения и формально упоминает ФГОС, он абсолютно неприемлем из-за грубых ошибок в чувашском языке. Модель выдумывает фразы (например, использует «Сывă-и» для прощания, конструирует неестественные кальки с русского вроде «Мана та çавăн пек» и «Каçхине ырă» вместо «Ырă каç»), что делает материал фактически неверным и непригодным для использования на уроке.",
+      "elapsed": 15.3,
+      "thinking_tokens": 1330
+    },
+    {
+      "prompt_id": "D2.2",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 2,
+        "factual_accuracy": 2,
+        "actionability": 1,
+        "cultural_context": 2,
+        "chuvash_accuracy": 2
+      },
+      "justification": "Ответ имеет базовую структуру, но содержит серьезные фактические ошибки в чувашской грамматике: названия некоторых падежей выдуманы путем калькирования с русского (например, «айăплав падежĕ» вместо «пару-тĕллев», «тувăм» вместо «пĕрлешӳ»), а форма притяжательного падежа образована неверно («лашан» вместо «лашанăн»). В русском тексте допущена грубая опечатка («Аглютынативность»), а сам материал не опирается на ФГОС и не предлагает практических шагов или упражнений для закрепления.",
+      "elapsed": 18.7,
+      "thinking_tokens": 1579
+    },
+    {
+      "prompt_id": "D2.3",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 2,
+        "chuvash_accuracy": 3
+      },
+      "justification": "План урока хорошо структурирован, соответствует возрасту первоклассников и включает все запрошенные элементы (игру, раскраску, новые слова). Чувашский язык использован в основном корректно, со всеми нужными специфическими символами, однако использование русизма «папа» вместо традиционного «атте» является недочетом. В ответе отсутствует явная привязка к ФГОС и УУД, что снижает оценку за культурно-образовательный контекст.",
+      "elapsed": 13.6,
+      "thinking_tokens": 1034
+    },
+    {
+      "prompt_id": "D2.4",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 1,
+        "cultural_context": 2,
+        "chuvash_accuracy": 2
+      },
+      "justification": "Модель отказывается выполнить основную часть запроса (составить 5 предложений с глоссингом), что делает ответ неприменимым в учебных целях и снижает практичность до минимума. Кроме того, в объяснении грамматики допущена ошибка: форма прошедшего времени от глагола «çӳре» — «çӳрерĕ», а не «çӳречĕ», хотя примеры «пăхрăм» и «вуланă» образованы верно.",
+      "elapsed": 12.9,
+      "thinking_tokens": 970
+    },
+    {
+      "prompt_id": "D2.5",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 3,
+        "cultural_context": 2,
+        "chuvash_accuracy": 2
+      },
+      "justification": "Тест хорошо структурирован, соответствует уровню 3 класса и охватывает все заявленные темы, что делает его готовым к использованию на уроке. Однако в первом вопросе допущена грубая ошибка: выдумано словосочетание «Сывă-ирĕр» для перевода слова «здравствуйте» (правильно — «Сывлăх сунатăп» или «Салам»), что снижает фактическую и чувашскую точность. Кроме того, ответ не содержит упоминаний ФГОС или специфики преподавания родного языка в российских школах.",
+      "elapsed": 15.4,
+      "thinking_tokens": 1200
+    },
+    {
+      "prompt_id": "D3.1",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 1,
+        "actionability": 2,
+        "cultural_context": 2,
+        "chuvash_accuracy": 1
+      },
+      "justification": "Ответ имеет базовую, но слишком обобщенную структуру урока без опоры на ФГОС и конкретных этапов. Главная проблема заключается в грубых фактических ошибках и галлюцинациях: чувашское блюдо «хуран кукли» (вареники) названо куриным супом, а блюдо «иеркен» полностью выдумано. Из-за отсутствия конкретных материалов, игр и правильного краеведческого контента план малоприменим на практике.",
+      "elapsed": 12.0,
+      "thinking_tokens": 813
+    },
+    {
+      "prompt_id": "D3.2",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 3,
+        "cultural_context": 2,
+        "chuvash_accuracy": 1
+      },
+      "justification": "Ответ предлагает хорошо структурированное задание для урока ИЗО с понятными целями и критериями оценивания. Однако описание чувашского орнамента слишком обобщенное, не содержит специфических терминов (например, «кĕскĕ», «тĕрĕ») и полностью игнорирует чувашский язык, а также не опирается на ФГОС или региональный компонент.",
+      "elapsed": 12.1,
+      "thinking_tokens": 882
+    },
+    {
+      "prompt_id": "D3.3",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 1,
+        "actionability": 3,
+        "cultural_context": 2,
+        "chuvash_accuracy": 3
+      },
+      "justification": "Модель хорошо справилась с форматом, предоставив краткие и емкие тексты для школьного стенда. Однако в ответе присутствуют грубые фактические ошибки: неверно указаны современные районы и регионы рождения К. Иванова (он родился в Белебеевском, а не Стерлитамакском районе) и И. Яковлева (он родился в деревне Кошки-Новотимбаево Симбирской губернии, ныне Татарстан, а не в Самарской области), а также неточно описана смерть Иванова (он умер от болезни, а не «трагически погиб»). Упоминание ФГОС выглядит искусственно, а чувашский язык в ответе не использовался.",
+      "elapsed": 15.1,
+      "thinking_tokens": 1167
+    },
+    {
+      "prompt_id": "D4.1",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 1,
+        "actionability": 2,
+        "cultural_context": 2,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The lesson plan contains severe errors in Chuvash: 'упăте' translates to 'monkey', not 'hare', which completely contradicts the 'animals of our region' theme, and 'тавтапулăр' is a hallucinated mix of 'тавтапуç' (thank you) and 'сывă пулăр' (goodbye). Pedagogically, the lesson timing adds up to 55 minutes (incorrect for 2nd grade), and the activities are highly repetitive and lack depth.",
+      "elapsed": 12.8,
+      "thinking_tokens": 1061
+    },
+    {
+      "prompt_id": "D4.2",
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 2,
+        "chuvash_accuracy": 2
+      },
+      "justification": "Предложенные задания слишком просты для уровня олимпиады 5-6 классов, а задание на чтение (Задание 4) полностью составлено на русском языке, что нецелесообразно для олимпиады по чувашскому. В чувашском переводе присутствуют неестественные конструкции (например, использование слова «Сывлăх» вместо «Сывлăх сунатăп» в качестве приветствия). В целом материал структурирован, но требует значительной методической и лингвистической доработки.",
+      "elapsed": 14.7,
+      "thinking_tokens": 1178
+    }
+  ]
+}

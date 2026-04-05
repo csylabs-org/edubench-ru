@@ -1,0 +1,102 @@
+{
+  "model": {
+    "id": "google/gemini-3.1-pro-preview",
+    "label": "Gemini 3.1 Pro (ChuvBench only)"
+  },
+  "judge": {
+    "model": "google/gemini-3.1-pro-preview",
+    "label": "Gemini 3.1 Pro"
+  },
+  "scores": [
+    {
+      "success": false,
+      "error": "Unterminated string starting at: line 1 column 105 (char 104)",
+      "prompt_id": "D1.1",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "prompt_id": "D1.2",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Unterminated string starting at: line 1 column 105 (char 104)",
+      "prompt_id": "D1.3",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Unterminated string starting at: line 1 column 105 (char 104)",
+      "prompt_id": "D1.4",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Expecting property name enclosed in double quotes: line 1 column 104 (char 103)",
+      "prompt_id": "D1.5",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Expecting property name enclosed in double quotes: line 1 column 104 (char 103)",
+      "prompt_id": "D2.1",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Expecting value: line 5 column 24 (char 96)",
+      "prompt_id": "D2.2",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Unterminated string starting at: line 1 column 105 (char 104)",
+      "prompt_id": "D2.3",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Unterminated string starting at: line 1 column 105 (char 104)",
+      "prompt_id": "D2.4",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Unterminated string starting at: line 1 column 105 (char 104)",
+      "prompt_id": "D2.5",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "prompt_id": "D3.1",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "prompt_id": "D3.2",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Expecting ',' delimiter: line 1 column 103 (char 102)",
+      "prompt_id": "D3.3",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Expecting property name enclosed in double quotes: line 1 column 104 (char 103)",
+      "prompt_id": "D4.1",
+      "module": "D"
+    },
+    {
+      "success": false,
+      "error": "Expecting ',' delimiter: line 1 column 103 (char 102)",
+      "prompt_id": "D4.2",
+      "module": "D"
+    }
+  ]
+}

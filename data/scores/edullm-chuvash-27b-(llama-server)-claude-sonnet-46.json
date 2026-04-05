@@ -1,0 +1,814 @@
+{
+  "model": {
+    "id": "local/edullm-chuvash-27b",
+    "label": "EduLLM-Chuvash 27B (llama-server)",
+    "vram": "22 GB Q6_K",
+    "open": true
+  },
+  "judge": {
+    "model": "anthropic/claude-sonnet-4.6",
+    "label": "Claude Sonnet 4.6"
+  },
+  "scores": [
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The model response completely failed to address the prompt, which requested a технологическая карта (lesson plan) for a 3rd-grade Russian language lesson on noun gender and number. Instead, the response provided a Chuvash-to-Russian translation exercise with linguistic commentary, which is entirely irrelevant to the task. There is no lesson plan, no ФГОС-aligned stages, no learning objectives, no planned results, and no homework assignment. The response scores 1 across nearly all pedagogical dimensions because it does not fulfill the educational task in any way.",
+      "elapsed": 4.9,
+      "prompt_id": "A1.1",
+      "module": "A",
+      "category": "Lesson Planning"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The model response is completely irrelevant to the requested task — instead of developing a 7th-grade math lesson plan on linear equations, it provided a translation note about a Chuvash language phrase. None of the required lesson components (motivational stage, knowledge actualization, new material with differentiated examples, three-level consolidation, reflection) are present. The response fails on all pedagogical, factual, actionability, and cultural context dimensions as it does not address the prompt at all.",
+      "elapsed": 4.4,
+      "prompt_id": "A1.2",
+      "module": "A",
+      "category": "Lesson Planning"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 1,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The model response is completely irrelevant to the requested lesson plan. Instead of creating a 2nd-grade lesson plan on animal classification with game-based learning and differentiated tasks, the response provides a Chuvash language vocabulary analysis of an unrelated short phrase. The response fails on every dimension: no lesson structure, no pedagogical content, no Russian educational context, and no actionable steps for a teacher.",
+      "elapsed": 5.5,
+      "prompt_id": "A1.3",
+      "module": "A",
+      "category": "Lesson Planning"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 3,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The response completely ignores the original prompt: the task requested a 5th-grade lesson on Present Simple (affirmative, negative, interrogative sentences) with specific components (phonetic warm-up, situational introduction, pair practice, creative task, reflection, homework), but the model produced a lesson on 'Animals' vocabulary for grades 8-9. Despite being a well-structured ФГОС-aligned lesson with УУД, differentiated homework, and proper stages, it fails on the core requirement of addressing the requested grammar topic and grade level. Factual accuracy and language quality are fine within the produced content, but the fundamental mismatch with the prompt severely undermines pedagogical quality and actionability for the teacher who asked the question.",
+      "elapsed": 8.5,
+      "prompt_id": "A1.4",
+      "module": "A",
+      "category": "Lesson Planning"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The model response is completely off-topic — instead of developing a history lesson plan for 6th grade on 'Ancient Rus: Adoption of Christianity,' it produced a Chuvash language text analysis with vocabulary glossary about childhood memories in a village. There is zero alignment with the requested task: no lesson plan, no ФГОС references, no historical sources work, no chronological timeline, no problem question, and no interdisciplinary connections with literature. The response appears to be a hallucinated answer to an entirely different prompt, making it completely unusable for the stated educational purpose.",
+      "elapsed": 6.7,
+      "prompt_id": "A1.5",
+      "module": "A",
+      "category": "Lesson Planning"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 3,
+        "cultural_context": 3,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The response completely ignores the actual prompt, which asked for a simple explanation of fractions for a 3rd-grader using everyday examples. Instead, it provides a detailed lesson plan on Russian language grammar (noun cases). This is a fundamental task mismatch. The lesson plan itself is well-structured with ФГОС-aligned goals, proper stages, and good language quality, but it contains a factual error — Russian has 6 cases, not 8, and the response lists 'Местный падеж' which is not a standard case in modern Russian grammar. The actionability and pedagogical quality scores reflect the quality of the lesson plan as a standalone artifact, but the response fails entirely at the assigned task.",
+      "elapsed": 7.3,
+      "prompt_id": "A2.1",
+      "module": "A",
+      "category": "Student Explanation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 4,
+        "chuvash_accuracy": 1
+      },
+      "justification": "Ответ представляет собой полноценный конспект урока публикационного качества с чёткой структурой по ФГОС (УОНЗ), трёхкомпонентными целями (предметные, метапредметные, личностные), дифференциацией домашнего задания и методическими рекомендациями. Язык соответствует уровню опытного методиста — естественный учительский регистр, грамотные формулировки. Фактическая точность высокая, однако ответ не включает полноценного геометрического доказательства (через площади или перекладывание фигур), которое явно запрашивалось в задании, а исследовательская часть ограничивается числовой проверкой на тройке 3-4-5. Практичность максимальная: урок готов к немедленному применению с таймингом, групповой работой и рефлексией; культурный контекст глубоко интегрирован с упоминанием ФГОС, конкретных учебников (Атанасян, Макарычев) и исторических фактов.",
+      "elapsed": 11.1,
+      "prompt_id": "A2.2",
+      "module": "A",
+      "category": "Student Explanation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The model response is completely irrelevant to the prompt. Instead of explaining the change of seasons to a 5th grader using analogies and simple language, the response provides a translation and linguistic analysis of an unrelated Russian literary sentence. This represents a total failure to address the educational task, resulting in minimum scores across all dimensions.",
+      "elapsed": 4.6,
+      "prompt_id": "A2.3",
+      "module": "A",
+      "category": "Student Explanation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The response completely fails to address the prompt. Instead of explaining the 'жи-ши' spelling rule to a 4th grader, providing examples, and creating a mnemonic, the model produced an entirely irrelevant response about a cooking recipe with vocabulary analysis. There is zero pedagogical content related to the requested topic, no examples of жи-ши words, no mnemonic or poem, and no connection to Russian educational standards or the actual task.",
+      "elapsed": 5.1,
+      "prompt_id": "A2.4",
+      "module": "A",
+      "category": "Student Explanation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The model response is completely off-topic and irrelevant to the prompt. Instead of explaining covalent bonding, comparing it to ionic bonding, and drawing a word-based electron diagram of H₂O for a 9th-grade student, the response provides a Russian translation of a Chuvash text and linguistic commentary about Chuvash language features. This represents a total failure to address the educational task, resulting in the lowest possible scores across all dimensions.",
+      "elapsed": 4.4,
+      "prompt_id": "A2.5",
+      "module": "A",
+      "category": "Student Explanation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 1,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The model response is completely irrelevant to the prompt. Instead of analyzing OGE math results and providing a corrective work plan, the response provides a Russian translation of an English marketing phrase about gift boxes. This is a total failure on all dimensions — no pedagogical content, no actionable steps, no factual analysis of the described class results, and no connection to Russian educational context whatsoever.",
+      "elapsed": 4.9,
+      "prompt_id": "A3.1",
+      "module": "A",
+      "category": "Assessment"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 1,
+        "cultural_context": 2,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The response is completely off-topic: the prompt asked for an analysis of why 3rd-grade students confuse letters 'б' and 'д' and a correction program, but the model generated a lesson plan on negation in Russian for grades 8-9. This is a total mismatch — the response does not address dysgraphia, letter confusion causes, or any remediation program whatsoever. While the lesson plan itself is structurally reasonable and written in fluent Russian, it scores 1 on pedagogical quality and actionability relative to the actual task, and the factual content about negation contains some inaccuracies (e.g., the description of affixes '-Н-' and '-ЕСЬ-' as negation markers in verbs is linguistically confused). Cultural context is generic since it references ФГОС structure but not in relation to the actual question asked.",
+      "elapsed": 8.1,
+      "prompt_id": "A3.2",
+      "module": "A",
+      "category": "Assessment"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The model response is completely irrelevant to the requested task. Instead of creating a math test on 'Areas of Figures' for 8th grade with three difficulty levels, the model produced a Chuvash language translation and cultural/grammatical analysis of an unrelated sentence. The response fails on all pedagogical dimensions as it contains no math content, no test structure, no grading criteria, and no answers. It is entirely off-topic relative to the Russian K-12 math education prompt.",
+      "elapsed": 4.7,
+      "prompt_id": "A3.3",
+      "module": "A",
+      "category": "Assessment"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 3
+      },
+      "justification": "The response is completely irrelevant to the prompt — instead of analyzing why a 6th-grade student gets poor math grades at school despite doing well at home and providing an action plan for the teacher, the model produced an educational text about Chuvash ornamental symbolism in both Russian and Chuvash. This represents a total failure to address the pedagogical task, resulting in minimum scores for pedagogical quality, actionability, and cultural/educational context. The language quality and factual accuracy scores reflect only the quality of the off-topic content that was actually produced.",
+      "elapsed": 6.0,
+      "prompt_id": "A3.4",
+      "module": "A",
+      "category": "Assessment"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The response completely ignores the actual question about comparing ОГЭ and ЕГЭ formats and building preparation strategies for 9th grade. Instead, it provides an irrelevant grammar lesson about paired vowels and consonants. The factual content presented is also riddled with errors (e.g., 'глазы→глацы', 'машинисте' as correct form, false rules about open/closed syllables), making it both off-topic and factually inaccurate. There is no mention of ОГЭ/ЕГЭ structure, ФГОС, or any actionable teaching strategy.",
+      "elapsed": 6.3,
+      "prompt_id": "A3.5",
+      "module": "A",
+      "category": "Assessment"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The model response is completely off-topic: instead of solving the quadratic equation x²-5x+6=0 using three methods (discriminant, Vieta's theorem, factoring), it provided a translation and cultural analysis of a Chuvash phrase about an old man. This represents a total failure to address the mathematical prompt. There is zero pedagogical value, no factual content related to the task, no actionable steps for solving the equation, and no Russian educational context whatsoever. The only dimension with any merit is language quality, which is passable in the Chuvash translation portion, but entirely irrelevant to the requested task.",
+      "elapsed": 4.9,
+      "prompt_id": "B1.1",
+      "module": "B",
+      "category": "Mathematics"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The response completely fails to address the original prompt, which asked for a morphological analysis (морфологический разбор) of the Russian sentence 'Утренний туман медленно рассеивался над рекой.' Instead, the model provided a translation and linguistic analysis of what appears to be a Chuvash phrase, which is entirely irrelevant to the task. There is no morphological breakdown of any word from the original sentence, no identification of parts of speech, no grammatical categories discussed. This response is completely unusable for the stated educational purpose and demonstrates a fundamental failure to understand or respond to the prompt.",
+      "elapsed": 6.8,
+      "prompt_id": "B1.2",
+      "module": "B",
+      "category": "Russian Language"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The model response is completely off-topic and irrelevant to the prompt, which asked for an explanation of the law of conservation of energy using a pendulum example for 10th grade with formulas and a numerical example. Instead, the response provides a linguistic analysis of a Chuvash sentence translation, which has nothing to do with physics education. There is no pedagogical content, no formulas, no numerical example, and no alignment with ФГОС physics standards whatsoever, resulting in minimum scores across all relevant dimensions.",
+      "elapsed": 4.9,
+      "prompt_id": "B1.3",
+      "module": "B",
+      "category": "Physics"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The response completely ignores the actual prompt, which asked for an analysis of Pushkin's poem 'Я вас любил...' for 9th grade ОГЭ preparation. Instead, it analyzes an entirely unrelated phrase 'Заходите погостить, я буду рад', making the response factually irrelevant and pedagogically useless for the stated task. There is no mention of the poem's actual literary devices (анафора, инверсия, эпитеты, etc.), no ОГЭ-specific guidance, and no ФГОС alignment whatsoever.",
+      "elapsed": 5.4,
+      "prompt_id": "B1.4",
+      "module": "B",
+      "category": "Literature"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 3
+      },
+      "justification": "The response is completely mismatched to the prompt: the question asked about Peter I's reforms and a discussion question with two opposing viewpoints, but the response describes Chuvash folk holidays (Surhuri, Chavash Maslenitsa, etc.). This is a total content mismatch, making pedagogical quality, actionability, and cultural context scores minimal. The language quality of the response itself is fluent and natural Russian, and the Chuvash holiday descriptions appear reasonably accurate, but none of this is relevant to the actual educational task requested.",
+      "elapsed": 5.4,
+      "prompt_id": "B1.5",
+      "module": "B",
+      "category": "History"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 3,
+        "chuvash_accuracy": 1
+      },
+      "justification": "Ответ представляет собой полноценный план урока с чёткими этапами, целеполаганием, дифференцированным домашним заданием и рефлексией — это соответствует требованиям ФГОС и публикационному уровню. Язык естественный, профессиональный, характерный для методиста. Однако ответ не соответствует исходному запросу: вместо одной задачи с практическим контекстом и подробным решением предоставлен полный план урока; кроме того, задача про чайник (44 В вместо 220 В) требует пояснения, которое дано лишь вскользь. Культурный контекст присутствует (упоминание учебника, структура урока по ФГОС), но явных ссылок на ФГОС или ОГЭ нет.",
+      "elapsed": 12.5,
+      "prompt_id": "B1.6",
+      "module": "B",
+      "category": "Physics"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 1,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The model response is completely irrelevant to the prompt. Instead of explaining the difference between mitosis and meiosis for 9th grade with a comparative table and examples, the response provides a Chuvash-to-Russian translation exercise with linguistic commentary. There is no biology content, no comparative table, no examples of cell division processes, and no pedagogical structure whatsoever — the response fails on every evaluated dimension.",
+      "elapsed": 4.0,
+      "prompt_id": "B1.7",
+      "module": "B",
+      "category": "Biology"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 2,
+        "actionability": 2,
+        "cultural_context": 2,
+        "chuvash_accuracy": 1
+      },
+      "justification": "Ответ полностью не соответствует запросу: вместо словарного диктанта из 20 слов на тему 'Безударные гласные в корне слова' для 5 класса с проверочными словами был предоставлен план урока по морфологическому разбору глагола. Это критическое несоответствие делает ответ практически бесполезным для заявленной задачи. Хотя сам план урока структурирован и написан грамотным учительским языком, он содержит ряд фактических неточностей (например, неверные термины 'совокупные/бессовокупные' вместо 'спрягаемые/неспрягаемые', ошибочное указание 'Предмет' при определении значения глагола), а также не содержит никаких ссылок на ФГОС или образовательные стандарты.",
+      "elapsed": 7.6,
+      "prompt_id": "B1.8",
+      "module": "B",
+      "category": "Russian Language"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The response is completely irrelevant to the prompt — instead of solving a geometry problem about a right triangle (finding AB, sin A, cos A, and area), it provides a Chuvash language translation and linguistic analysis of a phrase. There is no mathematical content whatsoever, making it pedagogically useless and factually wrong in context. The response fails on all educational dimensions as it does not address the 8th-grade geometry task in any way.",
+      "elapsed": 5.4,
+      "prompt_id": "B1.9",
+      "module": "B",
+      "category": "Mathematics"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 2,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 3
+      },
+      "justification": "The model response completely fails to address the prompt, which asked for a 200-300 word essay on 'The Role of the Volga in the History and Culture of Russia' as a model for a 7th-grade student. Instead, the response provides a Chuvash language translation and grammatical analysis of an unrelated dialogue snippet. There is no essay, no pedagogical content, no ФГОС alignment, and no actionable material for a teacher or student. The Chuvash linguistic notes appear reasonably accurate but are entirely irrelevant to the task.",
+      "elapsed": 4.9,
+      "prompt_id": "B1.10",
+      "module": "B",
+      "category": "Geography"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The response is completely irrelevant to the requested task — instead of a calendar-thematic plan (КТП) for 5th grade mathematics, it provides a Chuvash language text analysis with vocabulary and thematic breakdown of a fictional dialogue. There is no КТП, no lesson structure, no mathematical content, and no alignment with ФГОС or the specified topics (natural numbers, addition/subtraction, numeric expressions). This represents a total failure to address the prompt on all evaluated dimensions.",
+      "elapsed": 4.9,
+      "prompt_id": "C1.1",
+      "module": "C",
+      "category": "Planning"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 2,
+        "actionability": 1,
+        "cultural_context": 2,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The response is completely irrelevant to the prompt: instead of writing a student characteristic (характеристика) for a 4th-grade transfer, it produced a Chuvash language lesson plan about folk tales. This is a fundamental task mismatch — the model failed to address the actual request entirely. While the lesson plan itself has some structural merit, it cannot be scored positively on any dimension relative to the actual task requested.",
+      "elapsed": 4.8,
+      "prompt_id": "C1.2",
+      "module": "C",
+      "category": "Documentation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The model response is completely off-topic — it provides a literary translation analysis instead of comparing Montessori and traditional teaching methodologies for Russian primary schools. The response does not address the prompt at all, making it pedagogically useless, factually irrelevant to the question, and entirely lacking in actionability or Russian educational context (ФГОС, classroom management for 25-30 students, etc.). This appears to be a severe model hallucination or context confusion.",
+      "elapsed": 4.5,
+      "prompt_id": "C1.3",
+      "module": "C",
+      "category": "Methodology"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 1,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The model response is completely irrelevant to the prompt. Instead of providing recommendations for inclusive education with students with ADHD and dyslexia, the response contains a translation and cultural analysis of a Ukrainian folklore text, which has no connection to the question asked. This represents a total failure across all evaluation dimensions — the response is unusable, factually irrelevant, provides no actionable advice, and ignores the Russian educational context entirely.",
+      "elapsed": 4.4,
+      "prompt_id": "C1.4",
+      "module": "C",
+      "category": "Inclusion"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The response is completely irrelevant to the requested task — instead of a parent meeting scenario for 7th grade on ОГЭ preparation, it provides a Chuvash language lesson about packing luggage. None of the required components (приветствие, информационный блок, интерактивная часть, раздаточный материал, итоги) are present. The response fails on all pedagogical, factual, actionability, and cultural context dimensions, scoring 1 across those categories, with minimal credit only for the language quality of the Chuvash vocabulary section itself.",
+      "elapsed": 4.9,
+      "prompt_id": "C1.5",
+      "module": "C",
+      "category": "Communication"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The model response is completely irrelevant to the prompt. The prompt asked for a formative assessment system for a 6th-grade biology lesson on cell structure, but the response provides a Russian language grammar exercise about prepositions/postpositions, apparently intended for foreign language learners. This is a total mismatch — the response addresses none of the requested content (no formative assessment methods, no biology content, no criteria for evaluation). All dimensions receive the lowest possible scores due to complete failure to address the task.",
+      "elapsed": 4.4,
+      "prompt_id": "C1.6",
+      "module": "C",
+      "category": "Assessment Design"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The model response is completely irrelevant to the prompt. Instead of analyzing the situation of an 8th-grade student who doesn't do algebra homework and proposing a teacher strategy, the model produced a response about Russian grammar and syntax errors in a biological/medical phrase. This is a total failure to address the educational question, resulting in minimum scores across all dimensions. The response does not engage with pedagogy, ФГОС, actionable strategies, or the Russian educational context in any meaningful way.",
+      "elapsed": 6.0,
+      "prompt_id": "C1.7",
+      "module": "C",
+      "category": "Student Issues"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 3,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The response completely ignores the actual prompt, which requested a rubric (рубрика оценивания) for a 9th-grade project on 'Ecological Problems of Our City' with criteria, 4 levels, and descriptors. Instead, the model generated a full English language lesson plan on wildlife. While the lesson plan itself is reasonably well-structured with ФГОС references and natural Russian, it is entirely off-topic. The actionability and cultural context scores reflect the quality of what was produced, not its relevance to the task. The fundamental failure is a complete mismatch between the prompt and the response.",
+      "elapsed": 6.2,
+      "prompt_id": "C1.8",
+      "module": "C",
+      "category": "Rubric Design"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The response completely ignores the actual request — writing a recommendation letter for an 11th-grade student applying for a grant. Instead, it provides a grammar exercise about postpositions in Russian, which is entirely irrelevant. The content also contains significant factual errors: Russian does not have 'послелоги' (postpositions) — it has предлоги (prepositions), and the grammatical explanations are confused and incorrect. The response fails on every dimension as it addresses a completely different task.",
+      "elapsed": 4.0,
+      "prompt_id": "C1.9",
+      "module": "C",
+      "category": "Documentation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The response is completely irrelevant to the prompt — instead of providing an annual extracurricular activity plan for 5th grade across three directions (general intellectual, sports/health, spiritual/moral), it delivers a grammar lesson on Russian negation for advanced language learners. This is a total mismatch with the requested task. There is no plan, no program descriptions, no goals, no ФГОС alignment, and no actionable content for a school teacher. Factual accuracy cannot be properly assessed for the intended task, and the grammar content provided contains several inaccuracies and confusing explanations (e.g., the description of past tense negation with affixes is incorrect).",
+      "elapsed": 7.9,
+      "prompt_id": "C1.10",
+      "module": "C",
+      "category": "Extracurricular"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 2,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The model completely failed to perform the requested translation task — instead of translating the given Russian sentences into Chuvash, it produced an analysis of an entirely different, unrelated Chuvash text about collective labor. The response does not contain any translation of 'Доброе утро! Как тебя зовут? Меня зовут Маша. Мне 10 лет. Я учусь в школе.' The Chuvash vocabulary presented is fabricated in context and irrelevant to the prompt, making this response essentially useless and factually incorrect relative to the task.",
+      "elapsed": 13.7,
+      "prompt_id": "D1.1",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 4,
+        "chuvash_accuracy": 3
+      },
+      "justification": "The response completely ignores the actual prompt (a translation request) and instead generates an elaborate lesson plan — a fundamental mismatch. However, evaluated on its own merits as a lesson plan, it is publication-quality with full ФГОС goal structure, differentiated activities, cultural content, and a ready-to-use vocabulary table. The Chuvash language used is mostly accurate with proper special characters (ӑ, ӗ, ҫ, ӳ), culturally rich month names, and correct phrases, though some minor grammatical nuances (e.g., case aффixes explained as '-че'/'-та' could be more precise) may not satisfy a native speaker's scrutiny. The cultural context is deeply integrated with references to Chuvash agricultural calendar and regional imagery from Chuvashia.",
+      "elapsed": 8.5,
+      "prompt_id": "D1.2",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The response completely fails to address the original prompt, which asked for a Chuvash translation of 'Дети играют во дворе. Мальчики играют в футбол, а девочки прыгают через скакалку' with grammatical explanation. Instead, the model provided a translation of an entirely different, unrelated sentence about faith and hope, and fabricated Chuvash vocabulary analysis irrelevant to the task. There is no translation of the requested sentences, no grammatical analysis of Chuvash verb forms, noun cases, or sentence structure as requested, making the response completely unusable and factually wrong in context.",
+      "elapsed": 5.0,
+      "prompt_id": "D1.3",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The response completely fails to address the prompt, which asked for a dictionary of 10 basic school terms in Chuvash with transcription and usage examples. Instead, it provides an analysis of an unrelated Chuvash sentence about 'not being seen,' which is entirely irrelevant to the task. There is no dictionary, no school vocabulary, no transcriptions, and no usage examples as requested, making the response pedagogically useless and non-actionable. The Chuvash linguistic analysis provided, while partially plausible, cannot be properly evaluated in context since it addresses the wrong task entirely.",
+      "elapsed": 5.1,
+      "prompt_id": "D1.4",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 1
+      },
+      "justification": "The model completely failed to respond to the actual prompt, which asked for a translation of a children's counting rhyme ('Раз, два, три, четыре, пять — вышел зайчик погулять') into Chuvash with preserved rhythm and rhyme. Instead, it provided a translation of an entirely different sentence ('Нет, — сказал он, не подняв головы') with linguistic commentary. This is a fundamental task failure — the requested content (the counting rhyme translation) is entirely absent. The Chuvash content shown, while potentially linguistically plausible, is irrelevant to the task, and no attempt was made to render the rhyme or rhythm of the original children's verse.",
+      "elapsed": 5.4,
+      "prompt_id": "D1.5",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 3,
+        "cultural_context": 4,
+        "chuvash_accuracy": 3
+      },
+      "justification": "The response is a well-structured full lesson plan with clear ФГОС-aligned goals (предметные, метапредметные, личностные), proper lesson stages, and differentiated activities — however, it completely ignores the original prompt, which asked for a beginner-level exercise with 5 greeting/farewell phrases, transcription, translation, and a dialogue task. The Chuvash language used appears mostly accurate with proper special characters (Ӑ, Ӗ, Ҫ, Ӳ), though some forms like 'Зимӑ' (a Russian word with Chuvash suffix) in student speech and minor grammatical nuances may warrant scrutiny by a native speaker. Cultural context is strong with authentic references to Сурхури, Мӑнкун, Акатуй, Ҫимӗк, and Кӗр сӑри, but the complete mismatch with the requested task significantly undermines the response's practical value.",
+      "elapsed": 7.7,
+      "prompt_id": "D2.1",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 3,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 4,
+        "cultural_context": 2,
+        "chuvash_accuracy": 3
+      },
+      "justification": "The response is well-structured with clear sections (grammar reference, exercises, answer key, common errors) and is highly actionable with ready-to-use classroom materials. However, it diverges significantly from the original prompt which asked for word order, case system overview, and contrasts with Russian — instead focusing narrowly on plural formation, making it pedagogically misaligned with the stated goal. Chuvash examples appear mostly accurate with proper special characters (ă, ĕ, ç, ÿ), though some forms like 'кĕнекемсем' warrant verification by a native speaker, and cultural/ФГОС context is absent.",
+      "elapsed": 6.8,
+      "prompt_id": "D2.2",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 2,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The model response completely fails to address the prompt, which asked for a 1st-grade Chuvash language lesson plan on 'My Family' with vocabulary, a song/counting rhyme, a game activity, and a coloring task. Instead, the response appears to be an answer to an entirely different question — translating and analyzing a Chuvash sentence — showing a fundamental task misalignment. There is no lesson plan, no family vocabulary, no pedagogical structure, no ФГОС alignment, and no actionable content for a teacher to use; the Chuvash linguistic analysis provided, while partially reasonable, is irrelevant to the requested task.",
+      "elapsed": 6.2,
+      "prompt_id": "D2.3",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 4,
+        "language_quality": 4,
+        "factual_accuracy": 2,
+        "actionability": 4,
+        "cultural_context": 4,
+        "chuvash_accuracy": 3
+      },
+      "justification": "The response is a high-quality, publication-ready lesson plan with clear ФГОС-aligned goals, UUD, differentiation, and all proper lesson stages — however, it completely ignores the actual prompt, which asked for 5 sentences on 'My Day' with glossing and an explanation of past tense formation in Chuvash. The Chuvash vocabulary used is mostly accurate (Вӑрман, Атӑл, Юман, Упа, Тилӗ are correct), but the phonetic description of ҫ as 'мягкое сь или щ' is inaccurate — ҫ is closer to a voiceless alveolar affricate or fricative, not щ. The factual accuracy score is penalized because the response fails to address the requested linguistic content (glossing, past tense morphology) entirely, representing a fundamental mismatch with the task.",
+      "elapsed": 7.2,
+      "prompt_id": "D2.4",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The model completely failed to respond to the prompt, which asked for a 10-question multiple-choice test on Chuvash language topics (greetings, numbers 1-20, colors, family members, animals) for a 3rd-grade student. Instead, it produced a literary translation analysis of an unrelated Chuvash text, which is entirely off-task. No test questions, no answer choices, and no answer key were provided, making the response pedagogically useless and non-actionable. The Chuvash linguistic analysis provided, while partially plausible, is irrelevant to the task and cannot be credited toward the actual assignment.",
+      "elapsed": 5.5,
+      "prompt_id": "D2.5",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The response completely fails to address the prompt about the Акатуй festival and lesson preparation for 4th grade краеведение — instead it provides a translation and grammatical analysis of an unrelated Chuvash sentence. There is no lesson plan, no information about Акатуй traditions or rituals, and no pedagogical structure whatsoever. The Chuvash linguistic content present (ҫапла, чарӑнтармас, сире) appears partially plausible but is entirely irrelevant to the task, making this response a complete mismatch to the educational request.",
+      "elapsed": 5.9,
+      "prompt_id": "D3.1",
+      "module": "D",
+      "category": "Cultural Context"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 2,
+        "language_quality": 3,
+        "factual_accuracy": 3,
+        "actionability": 1,
+        "cultural_context": 3,
+        "chuvash_accuracy": 3
+      },
+      "justification": "The response provides rich and culturally informative content about Chuvash national costume with bilingual presentation, but it fundamentally fails to address the actual prompt, which asked specifically about ornament symbolism and a practical IZO lesson task for drawing a Chuvash pattern. There is no lesson plan, no drawing assignment, no ФГОС-aligned structure, and no actionable steps for a teacher to implement in an art class. The Chuvash language sections appear mostly accurate with proper special characters (ă, ĕ, ç, ÿ variants used), though some orthographic choices may not fully align with standard Chuvash literary norms.",
+      "elapsed": 5.8,
+      "prompt_id": "D3.2",
+      "module": "D",
+      "category": "Cultural Context"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 1,
+        "actionability": 1,
+        "cultural_context": 2,
+        "chuvash_accuracy": 3
+      },
+      "justification": "The response completely ignores the prompt, which asked for biographical profiles of three notable Chuvash figures (Andriyan Nikolayev, Konstantin Ivanov, Ivan Yakovlev) for a school display board. Instead, it provides information about Chuvash ornamental embroidery, making it entirely off-topic and unusable for the requested purpose. The Chuvash language used appears mostly correct with proper special characters, but the factual accuracy score is 1 because the content does not address the requested subject matter at all.",
+      "elapsed": 5.4,
+      "prompt_id": "D3.3",
+      "module": "D",
+      "category": "Cultural Context"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 2,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The response completely fails to address the prompt, which asked for a bilingual (Chuvash + Russian) lesson plan for 2nd grade on the topic 'Animals of Our Region.' Instead, the model provided a translation and linguistic analysis of a Chuvash colloquial phrase, which is entirely irrelevant to the task. There is no lesson plan, no ФГОС alignment, no vocabulary lists for animals, and no bilingual lesson structure whatsoever. The Chuvash linguistic content provided, while partially plausible, cannot be verified as accurate and is contextually misplaced.",
+      "elapsed": 5.0,
+      "prompt_id": "D4.1",
+      "module": "D",
+      "category": "Bilingual"
+    },
+    {
+      "success": true,
+      "scores": {
+        "pedagogical_quality": 1,
+        "language_quality": 2,
+        "factual_accuracy": 2,
+        "actionability": 1,
+        "cultural_context": 1,
+        "chuvash_accuracy": 2
+      },
+      "justification": "The response completely fails to address the prompt, which requested 5 olympiad tasks of varying difficulty (translation, grammar, culture, creative task) with answer keys and scoring criteria for grades 5-6. Instead, it provides a translation of an unspecified sentence and linguistic commentary, with no structured tasks, no scoring rubrics, and no pedagogical framework whatsoever. The Chuvash linguistic analysis contains some plausible elements but also questionable grammatical claims (e.g., the explanation of 'мĕн çеç пĕлсе пыратпăр' is speculative and potentially inaccurate), and the response lacks the ФГОС alignment, differentiation, or actionable structure required for a school olympiad preparation material.",
+      "elapsed": 6.7,
+      "prompt_id": "D4.2",
+      "module": "D",
+      "category": "Bilingual"
+    }
+  ]
+}

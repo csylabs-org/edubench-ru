@@ -1,0 +1,412 @@
+{
+  "model": {
+    "id": "edullm-ru",
+    "label": "EduLLM-RU Q6_K llama-server"
+  },
+  "judge": {
+    "model": "google/gemini-2.5-pro",
+    "label": "Gemini 2.5 Pro"
+  },
+  "scores": [
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 6.9,
+      "prompt_id": "A1.1",
+      "module": "A",
+      "category": "Lesson Planning"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.3,
+      "prompt_id": "A1.2",
+      "module": "A",
+      "category": "Lesson Planning"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 18.0,
+      "prompt_id": "A1.3",
+      "module": "A",
+      "category": "Lesson Planning"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Unterminated string starting at: line 3 column 5 (char 20). Raw: {\n  \"scores\": {\n    \"pedagogical_quality",
+      "elapsed": 7.0,
+      "prompt_id": "A1.4",
+      "module": "A",
+      "category": "Lesson Planning"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.6,
+      "prompt_id": "A1.5",
+      "module": "A",
+      "category": "Lesson Planning"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 5.7,
+      "prompt_id": "A2.1",
+      "module": "A",
+      "category": "Student Explanation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 23.6,
+      "prompt_id": "A2.2",
+      "module": "A",
+      "category": "Student Explanation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.2,
+      "prompt_id": "A2.3",
+      "module": "A",
+      "category": "Student Explanation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 6.5,
+      "prompt_id": "A2.4",
+      "module": "A",
+      "category": "Student Explanation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.2,
+      "prompt_id": "A2.5",
+      "module": "A",
+      "category": "Student Explanation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.2,
+      "prompt_id": "A3.1",
+      "module": "A",
+      "category": "Assessment"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Unterminated string starting at: line 3 column 5 (char 20). Raw: {\n  \"scores\": {\n    \"pedagogical_",
+      "elapsed": 21.1,
+      "prompt_id": "A3.2",
+      "module": "A",
+      "category": "Assessment"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 7.2,
+      "prompt_id": "A3.3",
+      "module": "A",
+      "category": "Assessment"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Unterminated string starting at: line 3 column 5 (char 20). Raw: {\n  \"scores\": {\n    \"pedagogical_quality",
+      "elapsed": 6.7,
+      "prompt_id": "A3.4",
+      "module": "A",
+      "category": "Assessment"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Unterminated string starting at: line 3 column 5 (char 20). Raw: {\n  \"scores\": {\n    \"pedagogical_quality",
+      "elapsed": 7.6,
+      "prompt_id": "A3.5",
+      "module": "A",
+      "category": "Assessment"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 6.7,
+      "prompt_id": "B1.1",
+      "module": "B",
+      "category": "Mathematics"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 6.7,
+      "prompt_id": "B1.2",
+      "module": "B",
+      "category": "Russian Language"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 7.3,
+      "prompt_id": "B1.3",
+      "module": "B",
+      "category": "Physics"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 28.0,
+      "prompt_id": "B1.4",
+      "module": "B",
+      "category": "Literature"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 6.9,
+      "prompt_id": "B1.5",
+      "module": "B",
+      "category": "History"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 1 column 1 (char 0). Raw: ), meta-subject (метапредметные - познавательные, регулятивные УУ",
+      "elapsed": 7.5,
+      "prompt_id": "B1.6",
+      "module": "B",
+      "category": "Physics"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.1,
+      "prompt_id": "B1.7",
+      "module": "B",
+      "category": "Biology"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 6.6,
+      "prompt_id": "B1.8",
+      "module": "B",
+      "category": "Russian Language"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 1 column 1 (char 0). Raw: I'm unable to proceed.\n2.  Generate a plausible response myself and then evaluate",
+      "elapsed": 17.0,
+      "prompt_id": "B1.9",
+      "module": "B",
+      "category": "Mathematics"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.0,
+      "prompt_id": "B1.10",
+      "module": "B",
+      "category": "Geography"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Unterminated string starting at: line 3 column 5 (char 20). Raw: {\n  \"scores\": {\n    \"pedagogical_quality",
+      "elapsed": 7.0,
+      "prompt_id": "C1.1",
+      "module": "C",
+      "category": "Planning"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Unterminated string starting at: line 3 column 5 (char 20). Raw: {\n  \"scores\": {\n    \"pedagogical_quality",
+      "elapsed": 28.9,
+      "prompt_id": "C1.2",
+      "module": "C",
+      "category": "Documentation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Unterminated string starting at: line 3 column 5 (char 20). Raw: {\n  \"scores\": {\n    \"pedagogical_quality",
+      "elapsed": 16.1,
+      "prompt_id": "C1.3",
+      "module": "C",
+      "category": "Methodology"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 23.3,
+      "prompt_id": "C1.4",
+      "module": "C",
+      "category": "Inclusion"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 6.2,
+      "prompt_id": "C1.5",
+      "module": "C",
+      "category": "Communication"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 18.3,
+      "prompt_id": "C1.6",
+      "module": "C",
+      "category": "Assessment Design"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 18.4,
+      "prompt_id": "C1.7",
+      "module": "C",
+      "category": "Student Issues"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.1,
+      "prompt_id": "C1.8",
+      "module": "C",
+      "category": "Rubric Design"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 7.1,
+      "prompt_id": "C1.9",
+      "module": "C",
+      "category": "Documentation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 6.6,
+      "prompt_id": "C1.10",
+      "module": "C",
+      "category": "Extracurricular"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 1",
+      "elapsed": 7.4,
+      "prompt_id": "D1.1",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 13.4,
+      "prompt_id": "D1.2",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Unterminated string starting at: line 3 column 5 (char 20). Raw: {\n  \"scores\": {\n    \"ped",
+      "elapsed": 13.4,
+      "prompt_id": "D1.3",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 6.9,
+      "prompt_id": "D1.4",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.1,
+      "prompt_id": "D1.5",
+      "module": "D",
+      "category": "Translation"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.0,
+      "prompt_id": "D2.1",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting ',' delimiter: line 3 column 29 (char 44). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\": 4",
+      "elapsed": 7.3,
+      "prompt_id": "D2.2",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 6.9,
+      "prompt_id": "D2.3",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Unterminated string starting at: line 3 column 5 (char 20). Raw: {\n  \"scores\": {\n    \"pedagogical_",
+      "elapsed": 10.2,
+      "prompt_id": "D2.4",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 1 column 1 (char 0). Raw: ",
+      "elapsed": 22.3,
+      "prompt_id": "D2.5",
+      "module": "D",
+      "category": "Language Teaching"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.3,
+      "prompt_id": "D3.1",
+      "module": "D",
+      "category": "Cultural Context"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Unterminated string starting at: line 3 column 5 (char 20). Raw: {\n  \"scores\": {\n    \"pedagogical_quality",
+      "elapsed": 7.9,
+      "prompt_id": "D3.2",
+      "module": "D",
+      "category": "Cultural Context"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.5,
+      "prompt_id": "D3.3",
+      "module": "D",
+      "category": "Cultural Context"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 6.9,
+      "prompt_id": "D4.1",
+      "module": "D",
+      "category": "Bilingual"
+    },
+    {
+      "success": false,
+      "error": "JSON parse error: Expecting value: line 3 column 27 (char 42). Raw: {\n  \"scores\": {\n    \"pedagogical_quality\":",
+      "elapsed": 7.3,
+      "prompt_id": "D4.2",
+      "module": "D",
+      "category": "Bilingual"
+    }
+  ]
+}
